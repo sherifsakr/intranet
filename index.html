@@ -12,7 +12,21 @@ margin-bottom:50px;
 .icon-bar{
 border:1px solid #91a2bc;
 margin:2px;
+color:#fff;
 }
+.row-icon-bar div:first-child {
+ background: #909fcd;
+}
+.row-icon-bar div:nth-child(2) {
+background: #62b8e1;
+}
+.row-icon-bar div:nth-child(3) {
+ background: #22b2c3;
+}
+.row-icon-bar div:nth-child(4) {
+ background: #47b685;
+}
+.main-nav{background-color:#2a7ac0!important;color:#fff;}
 </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -34,9 +48,7 @@ margin:2px;
 
 <header >
 <div class="container-fluid">
-<div class="row">
-<div class="col-md-12 bg-dark" > submenu</div>
-</div>
+
 
 
 <div class="row">
@@ -44,13 +56,15 @@ margin:2px;
 
 <img class="logo img-fluid" alt="Responsive image" src="https://www.stats.gov.sa/sites/all/themes/stats/images/stats_logo_ar.png" >
 </div>
-<div class="col-md-4" > empty</div>
+<div class="col-md-4" >  </div>
 <div class="col-md-4" > 
-<div class="row">
-<div class="col-md-2 icon-bar"> <i class="fas fa-user fa-3x"></i></div>
-<div class="col-md-2 icon-bar"><i class="fas fa-envelope fa-3x"></i></div>
-<div class="col-md-2 icon-bar"><i class="fas fa-sitemap fa-3x"></i></div>
-<div class="col-md-2 icon-bar">4</div>
+<div class="row row-icon-bar">
+<div class="col-md-2 icon-bar flex  text-center"><i class="fas fa-home fa-3x "></i><span><small>الرئيسية</small></span>   </div>
+<div class="col-md-2 icon-bar flex text-center"><i class="fas fa-sitemap fa-3x"></i> <span><small>خريطه الموقع</small></span> </div>
+<div class="col-md-2 icon-bar flex text-center"> <i class="fas fa-user fa-3x"></i> <small>الملف الشخصى </small></div>
+<div class="col-md-2 icon-bar flex text-center"><i class="fas fa-envelope fa-3x"></i>البريد الإلكترونى<small> </small></div>
+
+
 </div>
 
 </div>
@@ -58,8 +72,8 @@ margin:2px;
 
 </div>
  <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark  main-nav">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">Start Bootstrap</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
