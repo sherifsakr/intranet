@@ -26,6 +26,9 @@ background: #62b8e1;
  background: #47b685;
 }
 .main-nav{background-color:#2a7ac0!important;color:#fff;}
+footer{
+	background: linear-gradient(to left, #483D93 10%, #41529F 20%, #3864AB 30%, #297CC0 40%, #1797D4 50%, #00AEE5 60%, #1DACBC 70%, #34B4A5 80%, #41A578 90%,#449555 100%);
+}
 </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -61,7 +64,7 @@ background: #62b8e1;
 <div class="col-md-2 icon-bar flex  text-center"><i class="fas fa-home fa-3x "></i><span><small>الرئيسية</small></span>   </div>
 <div class="col-md-2 icon-bar flex text-center"><i class="fas fa-sitemap fa-3x"></i> <span><small>خريطه الموقع</small></span> </div>
 <div class="col-md-2 icon-bar flex text-center"> <i class="fas fa-user fa-3x"></i> <small>الملف الشخصى </small></div>
-<div class="col-md-2 icon-bar flex text-center"><i class="fas fa-envelope fa-3x"></i>البريد الإلكترونى<small> </small></div>
+<div class="col-md-2 icon-bar flex text-center"><i class="fas fa-envelope fa-3x"></i><small>البريد الإلكترونى </small></div>
 
 
 </div>
@@ -161,11 +164,43 @@ background: #62b8e1;
       </div>
 
       <div class="col-md-6">
-          <div class="col-lg-12 col-sm-12 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt="" style="height:200px"></a>
-          
-          </div>
+        <div class="col-lg-12 col-sm-12 portfolio-item">
+          	<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imgs\lake.jpg" alt="Los Angeles" width="1100" height="202">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>We had such a great time in LA!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="imgs\lake.jpg" alt="Chicago" width="1100" height="202">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="imgs\lake.jpg" alt="New York" width="1100" height="202">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
         </div>
        
        <div	class="row">
@@ -174,7 +209,7 @@ background: #62b8e1;
       
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Two</a>
+                <a href="#">الأخبار</a>
               </h4>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             </div>
@@ -187,7 +222,7 @@ background: #62b8e1;
       
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Two</a>
+                <a href="#">الملف الصحفي</a>
               </h4>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             </div>
@@ -199,7 +234,7 @@ background: #62b8e1;
             
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Three</a>
+                <a href="#">الأخبار الإجتماعية</a>
               </h4>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
             </div>
@@ -211,7 +246,7 @@ background: #62b8e1;
             
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Three</a>
+                <a href="#">أحداث وفعاليات</a>
               </h4>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
             </div>
@@ -271,7 +306,7 @@ background: #62b8e1;
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-1 bg-dark ">
+    <footer class="py-1">
       <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
       </div>
