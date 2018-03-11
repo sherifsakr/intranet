@@ -22,36 +22,75 @@ body {
   margin-bottom: 30px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
-        /*jssor slider loading skin spin css*/
-        .jssorl-009-spin img {
-            animation-name: jssorl-009-spin;
-            animation-duration: 1.6s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
+[type=radio] {
+  display: none;
+}
 
-        @keyframes jssorl-009-spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
+#slider {
+  height: 10.8vw;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
 
-        /*jssor slider bullet skin 111 css*/
-        .jssorb111 .i {position:absolute;color:#fff;font-family:"Helvetica neue",Helvetica,Arial,sans-serif;text-align:center;cursor:pointer;z-index:0;}
-        .jssorb111 .i .n {display:none;}
-        .jssorb111 .i .b {fill:#fff;stroke:#000;stroke-width:500;stroke-miterlimit:10;stroke-opacity:.5;}
-        .jssorb111 .i:hover .b {fill:#fea900;stroke:#fea900;stroke-width:6000;stroke-opacity:1;}
-        .jssorb111 .iav .b {fill:#000;stroke-width:6000;stroke-opacity:1;}
-        .jssorb111 .i.idn {opacity:.3;}
-        .jssorb111 .iav .n, .jssorb111 .i:hover .n {display:block;}
+#slider label {
+  margin: auto;
+  width: 75%;
+  height: 100%;
+  border-radius: 4px;
+  position: absolute;
+  left: 0; right: 0;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
 
-        /*jssor slider thumbnail skin 121 css*/
-        .jssort121 .p {position:absolute;top:0;left:0;border-bottom:1px solid rgba(255,255,255,.2);box-sizing:border-box;color:#fff;background:rgba(0,0,0,.1);opacity:.7;}
-        .jssort121 .p .t {position:absolute;padding:10px;box-sizing:border-box;top:0;left:0;width:100%;height:100%;line-height:24px;overflow:hidden;}
-        .jssort121 .p .i {margin-right:10px;position:relative;top:0;left:0;width:96px;height:48px;border:none;float:left;}
-        .jssort121 .pav, .jssort121 .p:hover {color:#000;background:rgba(255,255,255,.7);}
-        .jssort121 .p:hover {opacity:.75;}
-        .jssort121 .pav, .jssort121 .p:hover.pdn {opacity:1;}
-        .jssort121 .ti {position:relative;font-size:14px;font-weight:bold;}
-        .jssort121 .d {position:relative;font-size:12px;}
-        /*.jssort121 .d:before {content:'\a';white-space:pre;}*/
+#s1:checked ~ #slide4, #s2:checked ~ #slide5,
+#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(-30%,0,-200px);
+}
+
+#s1:checked ~ #slide5, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(-15%,0,-100px);
+}
+
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide3, #s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+  transform: translate3d(0,0,0);
+}
+
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide4, #s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(15%,0,-100px);
+}
+
+#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+#s3:checked ~ #slide5, #s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(30%,0,-200px);
+}
+
+#slide1 { background: #483D93 }
+#slide2 { background: #3864AB }
+#slide3 { background: #1797D4 }
+#slide4 { background: #1DACBC }
+#slide5 { background: #41A578 }
+
+
+label{
+	color: white;
+}
