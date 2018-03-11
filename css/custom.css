@@ -82,8 +82,8 @@ section.news {background-color:#f3f7f8;}
     position: relative;
     overflow: visible;
 }
-.ticker-content{
-	
+.ticker-body{
+	    vertical-align: middle;margin-top: 10px;
 	}
 	
 .event-content{    
