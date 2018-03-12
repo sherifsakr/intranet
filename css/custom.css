@@ -89,6 +89,7 @@ section.news {background-color:#f3f7f8;}
 }
 .ticker-body{
 	    vertical-align: middle;margin-top: 10px;
+	        overflow: hidden;
 	}
 
 .event-content{
