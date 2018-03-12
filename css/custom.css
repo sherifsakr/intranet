@@ -1,10 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
-
+@font-face { font-family: 'neo';
+    src: url('../fonts/neo/NeoSansArabic.eot');
+    src: url('../fonts/neo/NeoSansArabic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/neo/NeoSansArabic.woff') format('woff'),
+    url('../fonts/neo/NeoSansArabic.ttf') format('truetype'),
+    url('../fonts/neo/NeoSansArabic.svg#ge_neofont') format('svg'); font-style: normal; }
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 //@import url('https://fonts.googleapis.com/css?family=Cairo|Open+Sans');
-
-body{font-family: 'Open Sans', sans-serif !important;font-size:16px !important; font-weight:300 !important; color:#555 !important;margin:0px !important; padding:0px !important;;background:#fff !important; }
+body{font-family: 'neo' !important;}
+body{font-family: 'neo' , 'Open Sans', sans-serif !important;font-size:16px !important; font-weight:300 !important; color:#555 !important;margin:0px !important; padding:0px !important;;background:#fff !important; }
 header{
 
 }
@@ -13,7 +18,7 @@ header{
 h1{margin:0 0 1em 0; font-size:2.8em; font-weight:700;}
 h2{margin:0 0 .5em 0; font-size:1.6em; font-weight:700; line-height:1.1em;}
 h3{margin:0 0 .5em 0; font-size:1.3em; font-weight:700;}
-h4{margin:0 0 1.5em 0; font-size:1em; font-weight:700; }
+h4{margin:0 0 1.5em 0; font-size:1em; font-weight:600; }
 
 p{ margin:0 0 1em 0;}
 a{color:#3ba9e0 !important;}
@@ -43,14 +48,14 @@ footer{
 	background: linear-gradient(to left, #483D93 10%, #41529F 20%, #3864AB 30%, #297CC0 40%, #1797D4 50%, #00AEE5 60%, #1DACBC 70%, #34B4A5 80%, #41A578 90%,#449555 100%);
 }
 
-.vedio-icon{    
+.vedio-icon{
  width: 60px;
     background-color: gray;
     float: left;
     margin: 5px;
 }
 .card{ background-color: transparent;border-color: #36a9e0; margin-bottom:10px; }
-.card-title{ 
+.card-title{
     color:#36a9e1;
 	border-bottom-width: 2px;
     border-bottom-style: solid;
@@ -67,7 +72,7 @@ section.news {background-color:#f3f7f8;}
 .card-title h1 { margin:0 0 .1em 0;line-height:2.0em;  color:#36a9e1; font-size:22px; font-weight:400;}
 .news h2{ margin:0 0 .5em 0; font-size:1.2em; font-weight:400; line-height:1.1em;}
 .news-pesdo{  margin-top: .5em;line-height: 1.5;font-size:13px;}
-.news-body {   
+.news-body {
     padding: 10px 0px;
     margin-bottom: 2.85em;
     border-bottom: 1px solid #e1e1e1;
@@ -85,12 +90,15 @@ section.news {background-color:#f3f7f8;}
 .ticker-body{
 	    vertical-align: middle;margin-top: 10px;
 	}
-	
-.event-content{    
+
+.event-content{
 	border-bottom: 1px dashed;
     margin-bottom: 10px;
 }
+<<<<<<< HEAD
 
 .icons-ser{
 	vertical-align: middle;
 }
+=======
+>>>>>>> branch 'master' of https://github.com/sherifsakr/intranet.git
