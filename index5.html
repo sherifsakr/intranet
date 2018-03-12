@@ -84,12 +84,18 @@ cursor: pointer;
     color: #000;}
     .carousel-caption p{text-align: right;}
 </style>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
   </head>
 
   <body>
+
     <header >
     <div class="container-fluid">
+
+
+
     <div class="row">
     <div class="col-md-4" >
     <img class="logo img-fluid" alt="Responsive image" src="https://www.stats.gov.sa/sites/all/themes/stats/images/stats_logo_ar.png" >
@@ -502,44 +508,50 @@ src="https://www.youtube.com/embed/t9O9ERdm67Y?controls=1&rel=1&showinfo=1">
       <!-- /.container -->
     </footer>
 
-<!-- Bootstrap core JavaScript -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/megamenu/mega.js"></script>
+
+
 <!--  ticker -->
 <script src="vendor/ticker/includes/jquery.ticker.js" type="text/javascript"></script>
 
 
 <script type="text/javascript">
-$(document).ready(function(){
 
-var clickEvent = false;
-$('#demo').carousel({
-interval:   4000
-}).on('click', '.list-group li', function() {
-  clickEvent = true;
-  $('.list-group li').removeClass('active');
-  $(this).addClass('active');
-}).on('slid.bs.carousel', function(e) {
-if(!clickEvent) {
-  var count = $('.list-group').children().length -1;
-  var current = $('.list-group li.active');
-  current.removeClass('active').next().addClass('active');
-  var id = parseInt(current.data('slide-to'));
-  if(count == id) {
-    $('.list-group li').first().addClass('active');
-  }
-}
-clickEvent = false;
-});
-})
-
-$(window).load(function() {
-var boxheight = $('#demo .carousel-inner').innerHeight();
-var itemlength = $('#demo .item').length;
-var triggerheight = Math.round(boxheight/itemlength+1);
-$('#demo .list-group-item').outerHeight(triggerheight);
-});
 
     $(function () {
         $('#js-news').ticker();
+    });
+    $(document).ready(function(){
+
+    var clickEvent = false;
+    $('#demo').carousel({
+    interval:   4000
+    }).on('click', '.list-group li', function() {
+      clickEvent = true;
+      $('.list-group li').removeClass('active');
+      $(this).addClass('active');
+    }).on('slid.bs.carousel', function(e) {
+    if(!clickEvent) {
+      var count = $('.list-group').children().length -1;
+      var current = $('.list-group li.active');
+      current.removeClass('active').next().addClass('active');
+      var id = parseInt(current.data('slide-to'));
+      if(count == id) {
+        $('.list-group li').first().addClass('active');
+      }
+    }
+    clickEvent = false;
+    });
+    })
+
+    $(window).load(function() {
+    var boxheight = $('#demo .carousel-inner').innerHeight();
+    var itemlength = $('#demo .item').length;
+    var triggerheight = Math.round(boxheight/itemlength+1);
+    $('#demo .list-group-item').outerHeight(triggerheight);
     });
 </script>
   </body>
