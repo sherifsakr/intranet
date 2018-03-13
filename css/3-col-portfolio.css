@@ -32,7 +32,7 @@ body {
 }
 
 #slider {
-  height: 10.8vw;
+  height: 2vw;
   position: relative;
   perspective: 1000px;
   transform-style: preserve-3d;
@@ -93,4 +93,5 @@ body {
 
 label{
 	color: white;
+	font-size: 23px; text-align: center; font-weight: bold;
 }

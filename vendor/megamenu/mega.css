@@ -1,4 +1,14 @@
-
+@font-face {
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style : normal;
+           src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+           src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+                 url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+                 url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+                 url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+                 url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+}
 /** * Eric Meyer's Reset CSS v2.0 (https://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
 html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
@@ -11,7 +21,7 @@ html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 
 
 nav.menu {
-	background: #3d58a3;
+	background: #00639a;
 	position: relative;
 	min-height: 45px;
 	height: 100%;
@@ -24,24 +34,24 @@ nav.menu {
 	display: inline-block;
 	color: #fff;
 	line-height: 45px;
-	
+
 }
 .menu > ul li a, .xs-menu li a {
 	text-decoration: none;
-	color: #fff;
+	color: #fff !important;
 	 display:block;
 	 padding: 0px 24px;
 }
 .menu > ul li a:hover {
-	background:#444;
+	background:#2780c3  ;
 	color: #fff;
 	transition-duration: 0.3s;
 	-moz-transition-duration: 0.3s;
 	-webkit-transition-duration: 0.3s;
 }
 .active{
-	background:#444 !important;
-	
+	background:#2780c3 !important ;
+
 }
 .displaynone{
 	display: none;
@@ -62,7 +72,7 @@ display:none;
 .xs-menu-cont > a:hover{
  cursor: pointer;
 }
-  
+
 .xs-menu li {
 color: #fff;
 padding: 14px 30px;
@@ -83,7 +93,7 @@ text-decoration:none;
 	padding:15px;
 	display:none;
 	 transition-duration: 0.9s;
-    
+
 }
 #menutoggle i {
     color: #fff;
@@ -162,7 +172,7 @@ color:#fff;
 font-family: FontAwesome;
 font-style: normal;
 margin-left: 5px;
- 
+
 
 }
  /*MediaQuerys*/
@@ -212,6 +222,3 @@ margin-left: 5px;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
-
-
-
