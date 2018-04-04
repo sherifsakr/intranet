@@ -107,8 +107,6 @@ section.news {background-color:#f3f7f8;}
   width: 50%;
 }
 
-
-
 .overlay {
 opacity:.8;
   position: absolute;
@@ -142,3 +140,66 @@ opacity:.8;
 .dropdown-menu{
 	width: fit-content;
 }
+
+/**/
+.carousel-item img{width: 760px; height: 400px;}
+#demo,.carousel-inner,.carousel-item{background-color: #fff;}
+#demo .carousel-caption {
+    left:0;
+	right:0;
+	bottom:0;
+	text-align:left;
+  padding: 0;
+  padding-right: 6px;
+	background:rgba(0,0,0,0.6);
+	text-shadow:none;
+}
+
+#demo .list-group {
+	position:absolute;
+	top:0;
+	right:0;
+}
+#demo .list-group-item {
+  overflow: hidden;
+  position: relative;
+display: block;
+padding: 10px 15px;
+margin-bottom: -1px;
+background-color: #fff;
+border: 1px solid #ddd;
+height: 81px;
+border-radius: 0px;
+cursor: pointer;
+	border-radius:0px;
+	cursor:pointer;
+}
+#demo .list-group .active {
+	background-color:#eee;
+}
+
+@media (min-width: 992px) {
+	#demo {padding-right:33.3333%;}
+	#demo .carousel-controls {display:none;}
+}
+@media (max-width: 991px) {
+	.carousel-caption p,
+	#demo .list-group {display:none;}
+}
+.list-group-item.active {
+    color: #000;}
+    .carousel-caption p{text-align: right;}
+    /**/
+  .rows-icon-bar{min-height: 80%; margin-top: 10px;}
+.weather , .profile{
+  border-right: solid 1px #eaeaea;
+}
+.clock h2 {    direction: ltr;}
+.clock p {font-size: 15px; margin: 0}
+.profile h6{font-size: 13px;
+    color: #222529; }
+.nav-item a {color:#fff !important}
+.dropdown-menu a {color: black !important}
+/**/
+  
+    
