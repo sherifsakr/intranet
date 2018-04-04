@@ -8,6 +8,9 @@ app.config(function($routeProvider) {
     .when("/boardManag", {
         templateUrl : "pages/boardManag.html"
     })
+     .when("/orgChart", {
+        templateUrl : "pages/orgChart.html"
+    })
     .when("/green", {
         templateUrl : "green.htm"
     })
@@ -15,3 +18,5 @@ app.config(function($routeProvider) {
         templateUrl : "blue.htm"
     });
 });
+
+
