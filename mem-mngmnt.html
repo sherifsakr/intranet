@@ -27,9 +27,7 @@
 .clock p {font-size: 15px; margin: 0}
 .profile h6{font-size: 13px;
     color: #222529; }
-    .navbar .form-inline{    position: absolute;
-    left: 0;
-  }
+
 .nav-item a {color:#fff !important}
 .dropdown-menu a {color: black !important}
 </style>
@@ -82,10 +80,42 @@ cursor:pointer;
 .list-group-item.active {
     color: #000;}
     .carousel-caption p{text-align: right;}
-</style>
-<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+.card-container {
+  cursor: pointer;
 
-<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  perspective: 600;
+  position: relative;
+
+}
+.card {
+  height: 100%;
+
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+  border: none;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  background: #eaeaed;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+</style>
+<script>
+
+</script>
   </head>
 
   <body>
@@ -188,7 +218,7 @@ cursor:pointer;
             <a class="nav-link" href="#"> المكتبة الرقمية</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline my-2 my-lg-0 mr-auto">
           <input class="form-control mr-sm-2" type="search" placeholder="بحث" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">بحث</button>
         </form>
@@ -198,18 +228,32 @@ cursor:pointer;
 <!-- Start Cards fpr members-->
 
 <div class="container">
-    <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+    <div class="row" style="margin-top: 20px; margin-bottom: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    ">
         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-12 col-12 main-section text-center">
                          
-                            <div class="row user-detail">
-                                <div class="col-lg-12 col-sm-12 col-12">
-                                    <img src="images/1.jpg" class="rounded-circle img-thumbnail">
+                            <div class="row user-detail card-container">
+                                <div class="col-lg-12 col-sm-12 col-12 ">
+                                    <div class="card">
+                                    	<div class="side">
+                                    	<img src="images/1.jpg" class="rounded-circle img-thumbnail">
                                     <h5> رئيس مجلس الإدارة</h5>
                                     <p>معالي أ. محمد بن مزيد التويجري</p>
                                     <hr>
                                     <span style="font-weight: bold">وزير الإقتصاد والتخطيط</span>
+                                    	</div>
+                                    	
+                                    	<div class="side back">
+                                    	<h5>
+                                    		الخبرات العلمية: 
+                                    	</h5>
+                                    		<p style="text-align: justify; padding: 15px;">
+درجة البكالوريوس في علوم الطيران من كلية الملك فيصل الجوية وكان له شرف المُشاركة في حرب الخليج عام 1991 م متقلداً العديد من الأوسمة التقديرية من رؤساء دول درجة الماجستير في إدارة الأعمال من جامعة الملك سعود مع مرتبة الشرف
+</p>
+                                    	</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row user-social-detail">
@@ -221,15 +265,28 @@ cursor:pointer;
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 col-12 main-section text-center">
                                
-                                <div class="row user-detail">
-                                    <div class="col-lg-12 col-sm-12 col-12">
-                                        <img src="images/2.jpg" class="rounded-circle img-thumbnail">
-                                        <h5>نائب رئيس مجلس الإدارة</h5>
-                                        <p>معالي د. فهد بن سليمان التخيفي</p>
-                                        <hr>
-                                        <span style="font-weight: bold">رئيس الهيئة العامة للإحصاء</span>
+                                <div class="row user-detail card-container">
+                                <div class="col-lg-12 col-sm-12 col-12 ">
+                                    <div class="card">
+                                    	<div class="side">
+                                    	<img src="images/2.jpg" class="rounded-circle img-thumbnail">
+                                    <h5> نائب رئيس مجلس الإدارة</h5>
+                                    <p>معالي د. فهد بن سليمان التخيفي</p>
+                                    <hr>
+                                    <span style="font-weight: bold">رئيس الهيئة العامة للإحصاء</span>
+                                    	</div>
+                                    	
+                                    	<div class="side back">
+                                    	<h5>
+                                    		الخبرات العلمية: 
+                                    	</h5>
+                                    		<p style="text-align: justify; padding: 15px;">
+                                    		درجة لدكتوراه في الإحصاء التطبيقي من جامعة شمال كولورادوجريلي، ولاية كولورادو، أمريكا، والماجستير في الإحصاء النظري من جامعة كولورادو الحكومية فورتكولنز، ولاية كولورادو، أميركا، والبكالوريوس في الرياضيات من جامعة الملك سعود
+                                    		</p>
+                                    	</div>
                                     </div>
                                 </div>
+                            </div>
                                 <div class="row user-social-detail">
                                     <div class="col-lg-12 col-sm-12 col-12">
                                         <a href="#"><i class="fas fa-envelope" aria-hidden="true"></i></a>
@@ -274,7 +331,6 @@ cursor:pointer;
                                         </div>
                                     </div>
                                 </div>
-                          
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 main-section text-center">
                           
                                     <div class="row user-detail">

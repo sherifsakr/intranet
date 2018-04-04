@@ -139,3 +139,6 @@ opacity:.8;
   width:100%;
   opcit:.5;
 }
+.dropdown-menu{
+	width: fit-content;
+}

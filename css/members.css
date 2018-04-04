@@ -6,7 +6,9 @@
 .user-detail img{
     height:150px;
     width:150px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .user-detail h5{
     margin:15px 0px  0px;
 }
@@ -24,4 +26,8 @@
 .list-group-item{
     border: none;
     
+}
+
+.user-detail{
+    min-height: 268px;
 }
