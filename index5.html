@@ -35,7 +35,7 @@
     <div class="container-fluid">
     <div class="row">
     <div class="col-md-4 col-sm-12 col-xs-12" >
-    <img class="logo img-fluid" alt="Responsive image" src="https://www.stats.gov.sa/sites/all/themes/stats/images/stats_logo_ar.png" >
+    <img class="logo img-fluid" alt="Responsive image" src="images/stats_logo_ar.png" >
     </div>
    
     <div class="col-md-8 col-sm-12 col-xs-12 hidden-sm-down" >
@@ -83,7 +83,9 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#!boardManag">أعضاء مجلس الإدارة</a>
-              <a class="dropdown-item" href="#!">الرؤية والرسالة والقيم</a>
+              <a class="dropdown-item" href="#!missionAndVision">الرؤية والرسالة والقيم</a>
+              <a class="dropdown-item" href="#!missions">مهام الهيئة</a>
+              
             </div>
           </li>
 
@@ -129,7 +131,7 @@
 <!-- navigation ------------------------------------>
 
     <!-- Page Content -->
-    <div class="container" >
+    <div class="container main-container" >
   
         <!-- angular templating -->
         <!-- this is where content will be injected -->
@@ -155,42 +157,6 @@
 <script src="vendor/ticker/includes/jquery.ticker.js" type="text/javascript"></script>
 
 
-<script type="text/javascript">
-
-
-    $(function () {
-        $('#js-news').ticker();
-    });
-    $(document).ready(function(){
-
-    var clickEvent = false;
-    $('#demo').carousel({
-    interval:   4000
-    }).on('click', '.list-group li', function() {
-      clickEvent = true;
-      $('.list-group li').removeClass('active');
-      $(this).addClass('active');
-    }).on('slid.bs.carousel', function(e) {
-    if(!clickEvent) {
-      var count = $('.list-group').children().length -1;
-      var current = $('.list-group li.active');
-      current.removeClass('active').next().addClass('active');
-      var id = parseInt(current.data('slide-to'));
-      if(count == id) {
-        $('.list-group li').first().addClass('active');
-      }
-    }
-    clickEvent = false;
-    });
-    })
-
-    $(window).load(function() {
-    var boxheight = $('#demo .carousel-inner').innerHeight();
-    var itemlength = $('#demo .item').length;
-    var triggerheight = Math.round(boxheight/itemlength+1);
-    $('#demo .list-group-item').outerHeight(triggerheight);
-    });
-</script>
   </body>
 
 </html>

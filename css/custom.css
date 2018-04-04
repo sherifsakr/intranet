@@ -61,7 +61,7 @@ footer{
     border-bottom-style: solid;
     border-bottom-color: #36a9e0;
 }
-
+.main-container{padding-top:10px;}
 .sevice-icon{color:#fff; background-color:#36a9e0;top: 0;    line-height: 88.8889px;
     text-align: center; margin:0px; padding:0px; border:1px solid;}
 .sevice-icon i{vertical-align: middle !important;}
