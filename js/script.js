@@ -51,7 +51,8 @@ app.controller("mainCtrl", function ($scope) {
 		    }
 		    clickEvent = false;
 		    });
-		    })
+		   
+		    });
 		    
 	 $(window).load(function() {
 		    var boxheight = $('#demo .carousel-inner').innerHeight();
@@ -67,6 +68,29 @@ app.controller('orgChartctrl', function($scope) {
 
 });
 app.controller('missionAndVisionCtrl', function($scope) {
-
+	$scope.$on('$viewContentLoaded', function(event) {
+		//Your code goes here.
+		 $('.card').css('display','none');
+		 $('.btn').css('display','none');
+		 $('#v').slideDown(1500,function(){
+			 $('#m').slideDown(1500,function(){
+				 $('#vl').slideDown(1500,function(){
+					 $('.ql').fadeIn(1000,function(){
+						 $('.fc').fadeIn(1000,function(){
+							 $('.sp').fadeIn(1000,function(){
+								 $('.pr').fadeIn(1000,function(){
+									 $('.op').fadeIn(1000,function(){
+										 $('.sh').fadeIn(1500);
+									 }); 
+								 }); 
+							 }); 
+						 });
+					 });
+				 }); 
+			 });
+		 });
+		});
+	
+	
 });
 
