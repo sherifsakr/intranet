@@ -71,21 +71,12 @@ app.controller('missionAndVisionCtrl', function($scope) {
 	$scope.$on('$viewContentLoaded', function(event) {
 		//Your code goes here.
 		 $('.card').css('display','none');
-		 $('.btn').css('display','none');
-		 $('#v').fadeIn('fast',function(){
-			 $('#m').fadeIn('fast',function(){
-				 $('#vl').fadeIn('fast',function(){
-					 $('.ql').fadeIn('fast',function(){
-						 $('.fc').fadeIn('fast',function(){
-							 $('.sp').fadeIn('fast',function(){
-								 $('.pr').fadeIn('fast',function(){
-									 $('.op').fadeIn('fast',function(){
-										 $('.sh').fadeIn('fast');
-									 }); 
-								 }); 
-							 }); 
-						 });
-					 });
+
+		 $('#v').slideDown(700,function(){
+			 $('#m').slideDown(700,function(){
+				 $('#vl').slideDown(700,function(){
+					 $(".card-text").fadeIn('slow');
+
 				 }); 
 			 });
 		 });
