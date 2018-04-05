@@ -8,8 +8,22 @@
     url('../fonts/neo/NeoSansArabic.svg#ge_neofont') format('svg'); font-style: normal; }
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 //@import url('https://fonts.googleapis.com/css?family=Cairo|Open+Sans');
+html, body {
+  height: 100%;
+  margin: 0;
+   display: flex;
+  flex-direction: column;
+  height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+}
 body{font-family: 'neo' !important;}
-body{font-family: 'neo' , 'Open Sans', sans-serif !important;font-size:16px !important; font-weight:300 !important; color:#555 !important;margin:0px !important; padding:0px !important;;background:#fff !important; }
+body{font-family: 'neo' , 'Open Sans', sans-serif !important;font-size:16px !important; font-weight:300 !important;
+ color:#555 !important;margin:0px !important; 
+ padding:0px !important;
+ background:#fff !important;
+
+  display: flex;
+  flex-direction: column;
+  }
 header{
 
 }
@@ -46,8 +60,14 @@ background: #62b8e1;
 .main-nav{background-color:#3d58a3!important;color:#fff; }
 footer{
 	background: linear-gradient(to left, #483D93 10%, #41529F 20%, #3864AB 30%, #297CC0 40%, #1797D4 50%, #00AEE5 60%, #1DACBC 70%, #34B4A5 80%, #41A578 90%,#449555 100%);
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
 }
-
+.footer {
+  flex-shrink: 0;
+}
 .vedio-icon{
  width: 60px;
     background-color: gray;
@@ -61,7 +81,14 @@ footer{
     border-bottom-style: solid;
     border-bottom-color: #36a9e0;
 }
-.main-container{padding-top:10px;}
+#container {
+   min-height:100%;
+   position:relative;
+    flex: 1;
+
+}
+.main-container{padding-top:10px;   min-height: 100%;      height:100%;
+      flex: 1 0 auto;}
 .sevice-icon{color:#fff; background-color:#36a9e0;top: 0;    line-height: 88.8889px;
     text-align: center; margin:0px; padding:0px; border:1px solid;}
 .sevice-icon i{vertical-align: middle !important;}
@@ -105,6 +132,7 @@ section.news {background-color:#f3f7f8;}
 .container-overlay {
   position: relative;
   width: 50%;
+  
 }
 
 .overlay {
