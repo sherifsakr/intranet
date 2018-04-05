@@ -78,6 +78,7 @@ app.controller('missionAndVisionCtrl', function($scope) {
 				 }); 
 			 });
 		 });
+		 
 		});
 	
 	
