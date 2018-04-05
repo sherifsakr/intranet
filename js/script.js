@@ -71,10 +71,12 @@ app.controller('missionAndVisionCtrl', function($scope) {
 	$scope.$on('$viewContentLoaded', function(event) {
 		//Your code goes here.
 		 $('.card').css('display','none');
+
 		 $('#v').slideDown(700,function(){
 			 $('#m').slideDown(700,function(){
 				 $('#vl').slideDown(700,function(){
 					 $(".card-text").fadeIn('slow');
+
 				 }); 
 			 });
 		 });
