@@ -23,6 +23,10 @@ app.config(function($routeProvider) {
     .when("/media", {
         templateUrl : "pages/media.html",
     
+	})
+	.when("/news", {
+        templateUrl : "pages/news.html",
+    
     })
 });
 
