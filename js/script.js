@@ -20,6 +20,10 @@ app.config(function($routeProvider) {
         templateUrl : "pages/missions.html",
     
     })
+    .when("/media", {
+        templateUrl : "pages/media.html",
+    
+    })
 });
 
 
