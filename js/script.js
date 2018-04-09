@@ -27,6 +27,10 @@ app.config(function($routeProvider) {
 	.when("/news", {
         templateUrl : "pages/news.html",
     
+	})
+	.when("/circulars", {
+        templateUrl : "pages/circulars.html",
+    
     })
 });
 
