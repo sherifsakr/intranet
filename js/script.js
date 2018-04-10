@@ -32,6 +32,10 @@ app.config(function($routeProvider) {
         templateUrl : "pages/circulars.html",
     
     })
+    .when("/media-details", {
+        templateUrl : "pages/media-details.html",
+    
+	})
 });
 
 
