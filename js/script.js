@@ -40,6 +40,10 @@ app.config(function($routeProvider) {
         templateUrl : "pages/events.html",
     
 	})
+	.when("/regulationsPolicies", {
+        templateUrl : "pages/Regulations_policies.html",
+    
+	})
 });
 
 
