@@ -36,6 +36,10 @@ app.config(function($routeProvider) {
         templateUrl : "pages/media-details.html",
     
 	})
+	.when("/events", {
+        templateUrl : "pages/events.html",
+    
+	})
 });
 
 
