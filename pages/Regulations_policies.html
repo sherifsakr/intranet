@@ -4,7 +4,10 @@
         width: 100%;
     }
     .reg-poli a{
-        color: black !important;
+        color: white !important;
+    }
+    .reg-poli .active{
+        color: #00639a !important;
     }
 
     .nav-tabs--vertical {
@@ -25,7 +28,6 @@
 }
 .nav-tabs--left .nav-link:hover {
   background-color: #f7f7f7;
-  border-color: transparent;
 }
 .nav-tabs--left .nav-link.active {
   border-bottom-color: #ddd;
@@ -36,214 +38,490 @@
 }
 .nav-tabs--left .nav-link.active:hover {
   background-color: #fff;
-  border-color: #0275d8 #fff #0275d8 #0275d8;
+
 }
+.deps .nav-tabs--vertical{
+	margin-right: -15px !important;
+}
+.deps .nav-item{
+	margin-top: 13px;
+	margin-right: 0 !important;
+}
+.reg-poli-top,reg-poli-side{
+	background-color: #36a9e0;
+}
+
+.modal-header{
+	background-color: #00639a;
+	color: white;
+	}
 </style>
 <div class="row">
     <div class="col-12">
-        <ul class="nav nav-tabs reg-poli">
+        <ul class="nav nav-tabs reg-poli reg-poli-top">
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab" href="#home" target="_self">اللوائح</a>
+          <a class="nav-link active" data-toggle="tab" href="#regulations" target="_self">اللوائح</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#menu1" target="_self">السياسات</a>
+          <a class="nav-link" data-toggle="tab" href="#policies" target="_self">السياسات</a>
         </li>
     </ul>
+
       
       <!-- Tab panes -->
-      <div class="tab-content reg-poli">
-        <div class="tab-pane active container" id="home">
-                <div class=" row d-flex flex-row mt-2">
-                        <div class="col-lg-3 col-md-3 col-12">
-                                <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="navigation">
-                                        <li class="nav-item">
-                                            <a href="#lorem" class="nav-link active" data-toggle="tab" role="tab" aria-controls="lorem" target="_self">الموارد البشرية</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#ipsum" class="nav-link" data-toggle="tab" role="tab" aria-controls="ipsum" target="_self">التقنية وأمن المعلومات</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#dolor" class="nav-link" data-toggle="tab" role="tab" aria-controls="dolor" target="_self">الشئؤن الإدارية</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#sit-amet" class="nav-link" data-toggle="tab" role="tab" aria-controls="sit-amet" target="_self">الشئؤون المالية</a>
-                                        </li>
-                                        <li class="nav-item">
-                                                <a href="#general-po" class="nav-link" data-toggle="tab" role="tab" aria-controls="sit-amet" target="_self">سياسات عامة</a>
-                                            </li>
-                                    </ul>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-12">
-                                <div class="tab-content">
-                                        <div class="tab-pane fade show active" id="lorem" role="tabpanel">
-                                                <table class="table table-hover table-dark">
-                                                        <thead>
-                                                          <tr>
-                                                            <th scope="col">#</th>
-                                                            <th scope="col">اللائحة</th>
-                                                            <th scope="col">عدد الصفحات</th>
-                                                            <th scope="col">تاريخ النشر</th>
-                                                            <th scope="col">التفاصيل</th>
-                                                          </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                          <tr>
-                                                            <th scope="row">1</th>
-                                                            <td>قواعد تنظيم قبول المسؤولين في الجهات الحكومية للهـدايا</td>
-                                                            <td>3</td>
-                                                            <td>2017/07/18</td>
-                                                            <td>
-                                                                <a data-toggle="modal" href="#myModal" target="_self">
-                                                                    عرض
-                                                                </a>
-                                                            </td>
-                                                          </tr>
-                                                          <tr>
-                                                            <th scope="row">2</th>
-                                                            <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
-                                                            <td>3</td>
-                                                            <td>2017/07/18</td>
-                                                            <td>
-                                                                <a data-toggle="modal" href="#myModal" target="_self">
-                                                                    عرض
-                                                                </a>
-                                                            </td>
-                                                          </tr>
-                                                          <tr>
-                                                            <th scope="row">3</th>
-                                                            <td>قواعد تنظيم قبول المسؤولين في الجهات الحكومية للهـدايا</td>
-                                                            <td>3</td>
-                                                            <td>2017/07/18</td>
-                                                            <td>
-                                                                <a data-toggle="modal" href="#myModal" target="_self">
-                                                                    عرض
-                                                                </a>
-                                                            </td>
-                                                          </tr>
-                                                        </tbody>
-                                                      </table>
-                                                        
-                                                          <!-- The Modal -->
-                                                          <div class="modal fade" id="myModal">
-                                                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                                              <div class="modal-content">
-                                                              
-                                                                <!-- Modal Header -->
-                                                                <div class="modal-header">
-                                                                  <h4 class="modal-title">قواعد تنظيم قبول المسؤولين في الجهات الحكومية للهـداي</h4>
-                                                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                                </div>
-                                                                
-                                                                <!-- Modal body -->
-                                                                <div class="modal-body">
-                                                                    <p>
-                                                                            تشمل هذه اللائحة 5 مواد تنظم عملية قبول الهدايا للمسؤولين في الجهات الحكومية أثناء الزيارات والمناسبات الرسمية، من خلال تحدد معايير وضوابط قبول الهدايا، وطبيعتها وقيمتها وكيفية التعامل معها بطريقة نظامية بشكل عام. 
-                                                                    </p>
-                                                                        <embed src="org.pdf" style="width: 100%; height: 700px;"  type='application/pdf'>
-                                                                </div>
-                                                                
-                                                                <!-- Modal footer -->
-                                                                <div class="modal-footer">
-                                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                                </div>
-                                                                
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="ipsum" role="tabpanel">
-                                                <table class="table table-hover table-dark">
-                                                        <thead>
-                                                          <tr>
-                                                            <th scope="col">#</th>
-                                                            <th scope="col">اللائحة</th>
-                                                            <th scope="col">عدد الصفحات</th>
-                                                            <th scope="col">تاريخ النشر</th>
-                                                            <th scope="col">التفاصيل</th>
-                                                          </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                          <tr>
-                                                            <th scope="row">1</th>
-                                                            <td>قواعد تنظيم قبول المسؤولين في الجهات الحكومية للهـدايا</td>
-                                                            <td>3</td>
-                                                            <td>2017/07/18</td>
-                                                            <td>
-                                                                <a data-toggle="modal" href="#myModal" target="_self">
-                                                                    عرض
-                                                                </a>
-                                                            </td>
-                                                          </tr>
-                                                          <tr>
-                                                            <th scope="row">2</th>
-                                                            <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
-                                                            <td>3</td>
-                                                            <td>2017/07/18</td>
-                                                            <td>
-                                                                <a data-toggle="modal" href="#myModal" target="_self">
-                                                                    عرض
-                                                                </a>
-                                                            </td>
-                                                          </tr>
-                                                          <tr>
-                                                            <th scope="row">3</th>
-                                                            <td>قواعد تنظيم قبول المسؤولين في الجهات الحكومية للهـدايا</td>
-                                                            <td>3</td>
-                                                            <td>2017/07/18</td>
-                                                            <td>
-                                                                <a data-toggle="modal" href="#myModal" target="_self">
-                                                                    عرض
-                                                                </a>
-                                                            </td>
-                                                          </tr>
-                                                        </tbody>
-                                                      </table>
-                                                        
-                                                          <!-- The Modal -->
-                                                          <div class="modal fade" id="myModal">
-                                                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                                              <div class="modal-content">
-                                                              
-                                                                <!-- Modal Header -->
-                                                                <div class="modal-header">
-                                                                  <h4 class="modal-title">قواعد تنظيم قبول المسؤولين في الجهات الحكومية للهـداي</h4>
-                                                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                                </div>
-                                                                
-                                                                <!-- Modal body -->
-                                                                <div class="modal-body">
-                                                                    <p>
-                                                                            تشمل هذه اللائحة 5 مواد تنظم عملية قبول الهدايا للمسؤولين في الجهات الحكومية أثناء الزيارات والمناسبات الرسمية، من خلال تحدد معايير وضوابط قبول الهدايا، وطبيعتها وقيمتها وكيفية التعامل معها بطريقة نظامية بشكل عام. 
-                                                                    </p>
-                                                                        <embed src="org.pdf" style="width: 100%; height: 700px;"  type='application/pdf'>
-                                                                </div>
-                                                                
-                                                                <!-- Modal footer -->
-                                                                <div class="modal-footer">
-                                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                                </div>
-                                                                
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="dolor" role="tabpanel">
+      <div class="row tab-content reg-poli ">
+      	<div class="tab-pane active container" id="regulations">
+      		<div class=" d-flex flex-row mt-2">
+      			<div class="col-lg-3 col-md-3 col-12 deps">
+                    <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left reg-poli-top" role="navigation">
+                        <li class="nav-item">
+                           <a href="#hr" class="nav-link active" data-toggle="tab" role="tab" aria-controls="hr" target="_self">الموارد البشرية</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#it" class="nav-link" data-toggle="tab" role="tab" aria-controls="it" target="_self">التقنية وأمن المعلومات</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#admin_affairs" class="nav-link" data-toggle="tab" role="tab" aria-controls="admin_affairs" target="_self">الشئؤن الإدارية</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#financial_affairs" class="nav-link" data-toggle="tab" role="tab" aria-controls="financial_affairs" target="_self">الشئؤون المالية</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#general_regulations" class="nav-link" data-toggle="tab" role="tab" aria-controls="general_regulations" target="_self">سياسات عامة</a>
+                        </li>
+                    </ul>
+                </div> <!-- End col for taps inside regulations -->
+                
+                <div class="col-lg-9 col-md-9 col-12">
+                  	<div class="tab-content">
+                        <div class="tab-pane fade show active" id="hr" role="tabpanel">
+                        	<table class="table table-hover">
+                            	<thead>
+                                 	<tr>
+                                       <th scope="col">#</th>
+                                       <th scope="col">اللائحة</th>
+                                       <th scope="col">عدد الصفحات</th>
+                                       <th scope="col">تاريخ النشر</th>
+                                       <th scope="col">التفاصيل</th>
+                                    </tr>
+                              	</thead>
+                                <tbody>
+                                	<tr>
+                                    	<th scope="row">1</th>
+                                        <td>Hr</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                             	 عرض
+                                            </a>
+                                        </td>
+                                   	</tr>
+                                    <tr>
+                                     	<th scope="row">2</th>
+                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                                 عرض
+                                        	</a>
+                                        </td>
+                                    </tr>
+                            	</tbody>
+                        	</table>
+                    	</div><!-- End hr -->
+                    	<div class="tab-pane fade" id="it" role="tabpanel">
+                        	<table class="table table-hover">
+                            	<thead>
+                                 	<tr>
+                                       <th scope="col">#</th>
+                                       <th scope="col">اللائحة</th>
+                                       <th scope="col">عدد الصفحات</th>
+                                       <th scope="col">تاريخ النشر</th>
+                                       <th scope="col">التفاصيل</th>
+                                    </tr>
+                              	</thead>
+                                <tbody>
+                                	<tr>
+                                    	<th scope="row">1</th>
+                                        <td>IT</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                             	 عرض
+                                            </a>
+                                        </td>
+                                   	</tr>
+                                    <tr>
+                                     	<th scope="row">2</th>
+                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                                 عرض
+                                        	</a>
+                                        </td>
+                                    </tr>
+                            	</tbody>
+                        	</table>
+                    	</div><!-- End it -->
+                    	<div class="tab-pane fade" id="admin_affairs" role="tabpanel">
+                        	<table class="table table-hover">
+                            	<thead>
+                                 	<tr>
+                                       <th scope="col">#</th>
+                                       <th scope="col">اللائحة</th>
+                                       <th scope="col">عدد الصفحات</th>
+                                       <th scope="col">تاريخ النشر</th>
+                                       <th scope="col">التفاصيل</th>
+                                    </tr>
+                              	</thead>
+                                <tbody>
+                                	<tr>
+                                    	<th scope="row">1</th>
+                                        <td>Administrative affairs</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                             	 عرض
+                                            </a>
+                                        </td>
+                                   	</tr>
+                                    <tr>
+                                     	<th scope="row">2</th>
+                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                                 عرض
+                                        	</a>
+                                        </td>
+                                    </tr>
+                            	</tbody>
+                        	</table>
+                    	</div><!-- End Administrative affairs -->
+                    	<div class="tab-pane fade" id="financial_affairs" role="tabpanel">
+                        	<table class="table table-hover">
+                            	<thead>
+                                 	<tr>
+                                       <th scope="col">#</th>
+                                       <th scope="col">اللائحة</th>
+                                       <th scope="col">عدد الصفحات</th>
+                                       <th scope="col">تاريخ النشر</th>
+                                       <th scope="col">التفاصيل</th>
+                                    </tr>
+                              	</thead>
+                                <tbody>
+                                	<tr>
+                                    	<th scope="row">1</th>
+                                        <td>Financial Affairs</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                             	 عرض
+                                            </a>
+                                        </td>
+                                   	</tr>
+                                    <tr>
+                                     	<th scope="row">2</th>
+                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                                 عرض
+                                        	</a>
+                                        </td>
+                                    </tr>
+                            	</tbody>
+                        	</table>
+                    	</div><!-- End financial_affairs -->
+                    	<div class="tab-pane fade" id="general_regulations" role="tabpanel">
+                        	<table class="table table-hover">
+                            	<thead>
+                                 	<tr>
+                                       <th scope="col">#</th>
+                                       <th scope="col">اللائحة</th>
+                                       <th scope="col">عدد الصفحات</th>
+                                       <th scope="col">تاريخ النشر</th>
+                                       <th scope="col">التفاصيل</th>
+                                    </tr>
+                              	</thead>
+                                <tbody>
+                                	<tr>
+                                    	<th scope="row">1</th>
+                                        <td>General Regulations</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                             	 عرض
+                                            </a>
+                                        </td>
+                                   	</tr>
+                                    <tr>
+                                     	<th scope="row">2</th>
+                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                                 عرض
+                                        	</a>
+                                        </td>
+                                    </tr>
+                            	</tbody>
+                        	</table>
+                    	</div><!-- End financial_affairs -->
+                   	</div><!-- End tap content -->
+                </div> <!-- End col for col of contnet taps -->
+            </div>
+        </div> <!-- End Regulations -->
+        <div class="tab-pane container" id="policies">
+      		<div class=" d-flex flex-row mt-2">
+      			<div class="col-lg-3 col-md-3 col-12 deps">
+                    <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left reg-poli-top" role="navigation">
+                        <li class="nav-item">
+                           <a href="#hr_p" class="nav-link active" data-toggle="tab" role="tab" aria-controls="hr_p" target="_self">الموارد البشرية</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#it_p" class="nav-link" data-toggle="tab" role="tab" aria-controls="it_p" target="_self">التقنية وأمن المعلومات</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#admin_affairs_p" class="nav-link" data-toggle="tab" role="tab" aria-controls="admin_affairs_p" target="_self">الشئؤن الإدارية</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#financial_affairs_p" class="nav-link" data-toggle="tab" role="tab" aria-controls="financial_affairs_p" target="_self">الشئؤون المالية</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#general_regulations_p" class="nav-link" data-toggle="tab" role="tab" aria-controls="general_regulations_p" target="_self">سياسات عامة</a>
+                        </li>
+                    </ul>
+                </div> <!-- End col for taps inside regulations -->
+                
+                <div class="col-lg-9 col-md-9 col-12">
+                  	<div class="tab-content">
+                        <div class="tab-pane fade show active" id="hr_p" role="tabpanel">
+                        	<table class="table table-hover">
+                            	<thead>
+                                 	<tr>
+                                       <th scope="col">#</th>
+                                       <th scope="col">اللائحة</th>
+                                       <th scope="col">عدد الصفحات</th>
+                                       <th scope="col">تاريخ النشر</th>
+                                       <th scope="col">التفاصيل</th>
+                                    </tr>
+                              	</thead>
+                                <tbody>
+                                	<tr>
+                                    	<th scope="row">1</th>
+                                        <td>Hr</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                             	 عرض
+                                            </a>
+                                        </td>
+                                   	</tr>
+                                    <tr>
+                                     	<th scope="row">2</th>
+                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                                 عرض
+                                        	</a>
+                                        </td>
+                                    </tr>
+                            	</tbody>
+                        	</table>
+                    	</div><!-- End hr -->
+                    	<div class="tab-pane fade" id="it_p" role="tabpanel">
+                        	<table class="table table-hover">
+                            	<thead>
+                                 	<tr>
+                                       <th scope="col">#</th>
+                                       <th scope="col">اللائحة</th>
+                                       <th scope="col">عدد الصفحات</th>
+                                       <th scope="col">تاريخ النشر</th>
+                                       <th scope="col">التفاصيل</th>
+                                    </tr>
+                              	</thead>
+                                <tbody>
+                                	<tr>
+                                    	<th scope="row">1</th>
+                                        <td>IT</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                             	 عرض
+                                            </a>
+                                        </td>
+                                   	</tr>
+                                    <tr>
+                                     	<th scope="row">2</th>
+                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                                 عرض
+                                        	</a>
+                                        </td>
+                                    </tr>
+                            	</tbody>
+                        	</table>
+                    	</div><!-- End it -->
+                    	<div class="tab-pane fade" id="admin_affairs_p" role="tabpanel">
+                        	<table class="table table-hover">
+                            	<thead>
+                                 	<tr>
+                                       <th scope="col">#</th>
+                                       <th scope="col">اللائحة</th>
+                                       <th scope="col">عدد الصفحات</th>
+                                       <th scope="col">تاريخ النشر</th>
+                                       <th scope="col">التفاصيل</th>
+                                    </tr>
+                              	</thead>
+                                <tbody>
+                                	<tr>
+                                    	<th scope="row">1</th>
+                                        <td>Administrative affairs</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                             	 عرض
+                                            </a>
+                                        </td>
+                                   	</tr>
+                                    <tr>
+                                     	<th scope="row">2</th>
+                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                                 عرض
+                                        	</a>
+                                        </td>
+                                    </tr>
+                            	</tbody>
+                        	</table>
+                    	</div><!-- End Administrative affairs -->
+                    	<div class="tab-pane fade" id="financial_affairs_p" role="tabpanel">
+                        	<table class="table table-hover">
+                            	<thead>
+                                 	<tr>
+                                       <th scope="col">#</th>
+                                       <th scope="col">اللائحة</th>
+                                       <th scope="col">عدد الصفحات</th>
+                                       <th scope="col">تاريخ النشر</th>
+                                       <th scope="col">التفاصيل</th>
+                                    </tr>
+                              	</thead>
+                                <tbody>
+                                	<tr>
+                                    	<th scope="row">1</th>
+                                        <td>Financial Affairs</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                             	 عرض
+                                            </a>
+                                        </td>
+                                   	</tr>
+                                    <tr>
+                                     	<th scope="row">2</th>
+                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                                 عرض
+                                        	</a>
+                                        </td>
+                                    </tr>
+                            	</tbody>
+                        	</table>
+                    	</div><!-- End financial_affairs -->
+                    	<div class="tab-pane fade" id="general_regulations_p" role="tabpanel">
+                        	<table class="table table-hover">
+                            	<thead>
+                                 	<tr>
+                                       <th scope="col">#</th>
+                                       <th scope="col">اللائحة</th>
+                                       <th scope="col">عدد الصفحات</th>
+                                       <th scope="col">تاريخ النشر</th>
+                                       <th scope="col">التفاصيل</th>
+                                    </tr>
+                              	</thead>
+                                <tbody>
+                                	<tr>
+                                    	<th scope="row">1</th>
+                                        <td>General Regulations</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                             	 عرض
+                                            </a>
+                                        </td>
+                                   	</tr>
+                                    <tr>
+                                     	<th scope="row">2</th>
+                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
+                                        <td>3</td>
+                                        <td>2017/07/18</td>
+                                        <td>
+                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                                 عرض
+                                        	</a>
+                                        </td>
+                                    </tr>
+                            	</tbody>
+                        	</table>
+                    	</div><!-- End financial_affairs -->
+                   	</div><!-- End tap content -->
+                </div> <!-- End col for col of contnet taps -->
+            </div>
+        </div> <!-- End Policies -->
+      </div> <!-- End tap content tag for all taps -->
+     </div> <!-- End Col-12 General -->
+</div>
 
-                                         </div>
-                                        <div class="tab-pane fade" id="sit-amet" role="tabpanel">
 
-                                        </div>
-                                        <div class="tab-pane fade" id="general-po" role="tabpanel">
-                                            
-                                        </div>
-                                    </div>
-                        </div>
-                    </div>
-                    
-        </div>
-        <div class="tab-pane container" id="menu1">
-            السياسات
-        </div>
-      </div>
-    </div>
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+	<div class="modal-dialog modal-dialog-centered modal-lg">
+		<div class="modal-content">
+		<!-- Modal Header -->
+			<div class="modal-header">
+            	<h4 class="modal-title">قواعد تنظيم قبول المسؤولين في الجهات الحكومية للهـداي</h4>
+            	<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+		<!-- Modal body -->
+            <div class="modal-body">
+            	<p>
+                 	 تشمل هذه اللائحة 5 مواد تنظم عملية قبول الهدايا للمسؤولين في الجهات الحكومية أثناء الزيارات والمناسبات الرسمية، من خلال تحدد معايير وضوابط قبول الهدايا، وطبيعتها وقيمتها وكيفية التعامل معها بطريقة نظامية بشكل عام. 
+            	</p>
+                <embed src="org.pdf" style="width: 100%; height: 700px;"  type='application/pdf'>
+			</div>
+                                                                
+        <!-- Modal footer -->
+        	<div class="modal-footer">
+            	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>                                                
+		</div>
+	</div>
 </div>

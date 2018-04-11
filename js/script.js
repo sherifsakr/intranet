@@ -42,6 +42,7 @@ app.config(function($routeProvider) {
 	})
 	.when("/regulationsPolicies", {
         templateUrl : "pages/Regulations_policies.html",
+        controller : "regulationsPolicies"
     
 	})
 });
@@ -106,7 +107,19 @@ app.controller('missionAndVisionCtrl', function($scope) {
 		 });
 		 
 		});
+});
+
+app.controller('regulationsPolicies', function($scope) {
+	$scope.$on('$viewContentLoaded', function(event) {
+		//Your code goes here.
+		$("table a").addClass("btn");
+		$("table a").css({
+			'font-weight': 'bold',
+			'background-color': '#4eba93'
+		});
+		
+		 
+		});
 	
 	
 });
-
