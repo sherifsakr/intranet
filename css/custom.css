@@ -224,8 +224,10 @@ cursor: pointer;
 .clock p {font-size: 15px; margin: 0}
 .profile h6{font-size: 13px;
     color: #222529; }
-.nav-item a {color:#fff !important}
+.nav-item-custom a {color:#fff !important}
 .dropdown-menu a {color: black !important}
 /**/
-  
-    
+.news-sub li a{color:#36a9e1 ;  background-color: #efefef ; border-color:none ;}
+.news-sub li.active a{
+background-color: #36a9e1;
+    color: #fff !important;}

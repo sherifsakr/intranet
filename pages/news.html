@@ -2,7 +2,7 @@
   .latest_news{ border:none;}
   </style>
 
-<section class="row" style="
+<section id="ns"  class="row" style="
 background-color: rgb(54, 169, 224);
 color: white;
 text-align: center;
@@ -27,7 +27,6 @@ padding: 10px;
         </aside>
 
         <aside class="col-md-4 news-side" >
-
 
           <div class="news-body latest_news">
           <img class="responsive-img img-thumbnail" src="images/n1.png" style="float:right;width: 290px;margin-left:10px;">
@@ -61,11 +60,23 @@ padding: 10px;
    <section class="row news">
     <aside class="col-md-6 news-side" style="background-color:#fff;">
 
+      
     <div class="card-title">
-     <h1><i class="fas fa-bookmark"></i> الأخبار</h1>
+        <ul class="nav nav-tabs news-sub">
+            <li class="nav-item " ng-class="{ active: isSet(1) }">
+                <a class="nav-link " href ng-click="setTab(1)">اخبار</a>
+             </li>
+             <li class="nav-item" ng-class="{ active: isSet(2) }">
+                <a class="nav-link " href ng-click="setTab(2)">المف الصحفى</a>
+             </li>
+             <li  class="nav-item" ng-class="{ active: isSet(3) }">
+                <a class="nav-link " href ng-click="setTab(3)">اخبار إجتماعية</a>
+             </li>
+          </ul>
      </div>
 
-  <div class="news-body">
+     <div ng-show="isSet(1)">
+  <div class="news-body" >
   <img  class="responsive-img img-thumbnail" src="images/n1.png" style="float:right; width:150px; margin-left:10px;">
               <div class="card-text">
               <h2> <a href="#"> المملكة تختتم مشاركتها في أعمال الدورة (49) للجنة الإحصائية للأمم المتحدة</a> </h2>
@@ -95,12 +106,46 @@ padding: 10px;
              </p>
              </div>
               </div>
+              </div>
+
+              <div ng-show="isSet(2)">
+                  <div class="news-body" >
+                  <img  class="responsive-img img-thumbnail" src="images/n1.png" style="float:right; width:150px; margin-left:10px;">
+                              <div class="card-text">
+                              <h2> <a href="#"> المملكة تختتم مشاركتها في أعمال الدورة (49) للجنة الإحصائية للأمم المتحدة</a> </h2>
+                             <div class="news-subtitle">May 13, 2018</div>
+                             <p class="news-pesdo">اختتمت المملكة مشاركتها  في أعمال الدورة التاسعة  والأربعين للجنة الإحصائية للأمم المتحدة والتي انطلقت  بمقر الأمم المتحدة
+                             </p>
+                             </div>
+                    </div>
+</div>
+<div ng-show="isSet(3)">
+    <div class="news-body" >
+    <img  class="responsive-img img-thumbnail" src="images/n1.png" style="float:right; width:150px; margin-left:10px;">
+                <div class="card-text">
+                <h2> <a href="#"> المملكة تختتم مشاركتها في أعمال الدورة (49) للجنة الإحصائية للأمم المتحدة</a> </h2>
+               <div class="news-subtitle">May 13, 2018</div>
+               <p class="news-pesdo">اختتمت المملكة مشاركتها  في أعمال الدورة التاسعة  والأربعين للجنة الإحصائية للأمم المتحدة والتي انطلقت  بمقر الأمم المتحدة
+               </p>
+               </div>
+      </div>
+      <div class="news-body">
+          <img  class="responsive-img img-thumbnail" src="images/n2.jpeg" style="float:right; width:150px; margin-left:10px;">
+                      <div class="card-text">
+                      <h2> <a href="#">الموافقة على إنشاء "وحدة الاتصال والتنسيق" لتعزيز التواصل بين الإدارات</a> </h2>
+                     <div class="news-subtitle">May 13, 2018</div>
+                     <p class="news-pesdo">أصدر معالي رئيس الهيئة الدكتور فهد بن سليمان التخيفي، قراراً إدارياً بإنشاء وحدة إدارية بمسمى "وحدة الاتصال والتنسيق" ترتبط
+                     </p>
+                     </div>
+                      </div>
+</div>
+
     </aside>
 
      <aside class="col-md-6 news-side" style="background-color:#fff;">
 
     <div class="card-title">
-     <h1><i class="fas fa-bookmark"></i> الأخبار</h1>
+     <h1><i class="fas fa-rss-square"></i> أخبار خارجيه</h1>
      </div>
 
   <div class="news-body">
@@ -136,3 +181,4 @@ padding: 10px;
     </aside>
 
     </section>
+    

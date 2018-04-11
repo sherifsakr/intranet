@@ -25,7 +25,8 @@ app.config(function($routeProvider) {
     
 	})
 	.when("/news", {
-        templateUrl : "pages/news.html",
+		templateUrl : "pages/news.html",
+		controller : "newsCtrl"
     
 	})
 	.when("/circulars", {
@@ -52,7 +53,10 @@ app.controller("mainCtrl", function ($scope) {
 	
 	$scope.$on('$viewContentLoaded', function(event) {
 		//Your code goes here.
-	    $('#js-news').ticker();
+		$('#js-news').ticker();
+		
+
+		
 		});
 	
 	 $(document).ready(function(){
@@ -116,10 +120,47 @@ app.controller('regulationsPolicies', function($scope) {
 		$("table a").css({
 			'font-weight': 'bold',
 			'background-color': '#4eba93'
-		});
-		
+			});
 		 
 		});
-	
+});
+
+app.controller('newsCtrl', function($scope) {
+	//tabs for sub news 
+	$scope.tab = 1;
+    $scope.setTab = function(newTab){
+      $scope.tab = newTab;
+    };
+    $scope.isSet = function(tabNum){
+      return $scope.tab === tabNum;
+	};
+
+	$scope.$on('$viewContentLoaded', function(event) {
+
+		function animateText(textArea) {
+			let text = textArea.value;
+			let to = text.length,
+			  from = 0;
+		
+			animate({
+			  duration: 1000,
+			  timing: bounce,
+			  draw: function(progress) {
+				let result = (to - from) * progress + from;
+				textArea.value = text.substr(0, Math.ceil(result))
+			  }
+			});
+		  }
+		
+		
+		  function bounce(timeFraction) {
+			 // return timeFraction;
+			   return Math.pow(timeFraction, 2)
+			  //  return 1 - Math.sin(Math.acos(timeFraction));
+		   //  x= 1.5;
+			 //   return Math.pow(timeFraction, 2) * ((x + 1) * timeFraction - x)
+		
+		  }
+	});
 	
 });
