@@ -115,7 +115,7 @@ app.controller('regulationsPolicies', function($scope) {
 		$("table a").addClass("btn");
 		$("table a").css({
 			'font-weight': 'bold',
-			'background-color': '#4eba93'
+			'background-color': 'rgb(0, 99, 154)'
 		});
 		
 		 

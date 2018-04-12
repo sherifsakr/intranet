@@ -5,11 +5,20 @@
     }
     .reg-poli a{
         color: white !important;
+        border-left: 0 !important;
+        border-radius: 0 !important;
     }
     .reg-poli .active{
         color: #00639a !important;
     }
-
+    .reg-poli a:hover{
+        color: rgb(0, 99, 154) !important;
+    }
+    
+    .reg-poli table a:hover{
+        color: white !important;
+    }
+    
     .nav-tabs--vertical {
   border-bottom: none;
   border-right: 1px solid #ddd;
@@ -19,9 +28,11 @@
 .nav-tabs--left {
   margin: 0 15px;
 }
+
 .nav-tabs--left .nav-item + .nav-item {
   margin-top: .25rem;
 }
+
 .nav-tabs--left .nav-link {
   transition: border-color .125s ease-in;
   white-space: nowrap;
@@ -36,10 +47,9 @@
   border-top-right-radius: 0;
   margin-right: -1px;
 }
-.nav-tabs--left .nav-link.active:hover {
-  background-color: #fff;
-
-}
+.nav-item .active{
+    	background-color: #f1f1f1 !important;
+    }
 .deps .nav-tabs--vertical{
 	margin-right: -15px !important;
 }
@@ -55,6 +65,14 @@
 	background-color: #00639a;
 	color: white;
 	}
+	.departments{
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	.reg-poli{
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
 </style>
 <div class="row">
     <div class="col-12">
@@ -65,15 +83,15 @@
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#policies" target="_self">السياسات</a>
         </li>
-    </ul>
+    	</ul>
 
       
       <!-- Tab panes -->
       <div class="row tab-content reg-poli ">
       	<div class="tab-pane active container" id="regulations">
-      		<div class=" d-flex flex-row mt-2">
+      		<div class=" d-flex flex-row mt-2" style="background-color: #f1f1f1 !important;">
       			<div class="col-lg-3 col-md-3 col-12 deps">
-                    <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left reg-poli-top" role="navigation">
+                    <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left reg-poli-top departments" role="navigation">
                         <li class="nav-item">
                            <a href="#hr" class="nav-link active" data-toggle="tab" role="tab" aria-controls="hr" target="_self">الموارد البشرية</a>
                         </li>
@@ -286,7 +304,7 @@
         <div class="tab-pane container" id="policies">
       		<div class=" d-flex flex-row mt-2">
       			<div class="col-lg-3 col-md-3 col-12 deps">
-                    <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left reg-poli-top" role="navigation">
+                    <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left reg-poli-top departments" role="navigation">
                         <li class="nav-item">
                            <a href="#hr_p" class="nav-link active" data-toggle="tab" role="tab" aria-controls="hr_p" target="_self">الموارد البشرية</a>
                         </li>
