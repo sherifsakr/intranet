@@ -46,6 +46,10 @@ app.config(function($routeProvider) {
         controller : "regulationsPolicies"
     
 	})
+	.when("/profile", {
+		templateUrl : "pages/profile.html",
+
+})
 });
 
 

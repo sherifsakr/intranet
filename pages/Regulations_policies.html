@@ -14,11 +14,7 @@
     .reg-poli a:hover{
         color: rgb(0, 99, 154) !important;
     }
-    
-    .reg-poli table a:hover{
-        color: white !important;
-    }
-    
+   
     .nav-tabs--vertical {
   border-bottom: none;
   border-right: 1px solid #ddd;
@@ -41,14 +37,13 @@
   background-color: #f7f7f7;
 }
 .nav-tabs--left .nav-link.active {
-  border-bottom-color: #ddd;
-  border-right-color: #fff;
-  border-bottom-left-radius: 0.25rem;
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
   border-top-right-radius: 0;
   margin-right: -1px;
 }
 .nav-item .active{
-    	background-color: #f1f1f1 !important;
+    	background-color: #ecf0f1 !important;
     }
 .deps .nav-tabs--vertical{
 	margin-right: -15px !important;
@@ -73,6 +68,19 @@
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
 	}
+	#regulations .flex-row{
+		background-color: #ecf0f1 !important; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;
+		 margin-top: 15px !important;
+	}
+	
+	#policies .flex-row{
+		background-color: #ecf0f1 !important; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;
+		margin-top: 15px !important;
+	}
+	table td{
+  border:2px dotted rgb(78, 186, 147)!important;
+ 
+}
 </style>
 <div class="row">
     <div class="col-12">
@@ -89,7 +97,7 @@
       <!-- Tab panes -->
       <div class="row tab-content reg-poli ">
       	<div class="tab-pane active container" id="regulations">
-      		<div class=" d-flex flex-row mt-2" style="background-color: #f1f1f1 !important;">
+      		<div class=" d-flex flex-row mt-2">
       			<div class="col-lg-3 col-md-3 col-12 deps">
                     <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left reg-poli-top departments" role="navigation">
                         <li class="nav-item">
