@@ -49,7 +49,11 @@ app.config(function($routeProvider) {
 	.when("/profile", {
 		templateUrl : "pages/profile.html",
 
-})
+	})
+	.when("/services", {
+		templateUrl : "pages/services.html",
+
+	})
 });
 
 
