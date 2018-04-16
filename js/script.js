@@ -125,6 +125,16 @@ app.controller('missionAndVisionCtrl', function($scope) {
 		});
 });
 
+app.controller('profile', function($scope) {
+	$scope.$on('$viewContentLoaded', function(event) {
+		//Your code goes here.
+			$(".profile-usermenu a").click(function(){
+				$("html, body").animate({ scrollTop: 650 });
+
+			});
+		});
+});
+
 app.controller('regulationsPolicies', function($scope) {
 	$scope.$on('$viewContentLoaded', function(event) {
 		//Your code goes here.
