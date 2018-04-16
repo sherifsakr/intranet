@@ -54,6 +54,10 @@ app.config(function($routeProvider) {
 		templateUrl : "pages/services.html",
 
 	})
+	.when("/profile", {
+		templateUrl : "pages/profile.html",
+		controller : "profile"
+	})
 });
 
 
