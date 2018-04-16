@@ -1,0 +1,308 @@
+<style>
+
+
+.profile-page {
+  margin: 20px 0;
+  overflow: auto;
+}
+
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: #fff;
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #5b9bd1;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+
+.profile-content {
+  padding: 20px;
+  background: #fff;
+  min-height: 460px;
+}
+
+  .nav-tabs--vertical {
+  border-bottom: none;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.nav-item .active{
+    	background-color: #ecf0f1 !important;
+    }
+.deps .nav-tabs--vertical{
+	margin-right: -15px !important;
+}
+.profile-page i{
+  margin-left: 6px;
+}
+.profile-page .nav-item{
+  margin-right: 0 !important;
+}
+.profile-sidebar{
+  border-left: #ece6e6  1px solid;
+  border-right: #ece6e6  1px solid;
+}
+.profile-usermenu ul li {
+  border-bottom: 1px solid #ece6e6;
+}
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+.profile-usermenu a{
+  color: gray !important;
+}
+.profile-usermenu  .active{
+  color:  #5b9bd1 !important;
+}
+</style>
+
+<div class="row profile-page" id="ex">
+		<div class="col-md-3 ">
+			<div class="profile-sidebar">
+				<!-- SIDEBAR USERPIC -->
+				<div class="profile-userpic text-center" style="width: 100%">
+					<img src="images/profile.jpg">
+				</div>
+				<!-- END SIDEBAR USERPIC -->
+				<!-- SIDEBAR USER TITLE -->
+				<div class="profile-usertitle">
+					<div class="profile-usertitle-name">
+						عبدالخالق محمد عبدالله الشهري
+					</div>
+					<div class="profile-usertitle-job">
+						مطور برامج
+					</div>
+				</div>
+				<!-- END SIDEBAR USER TITLE -->
+
+        <!-- SIDEBAR MENU -->
+				<div class="profile-usermenu">
+            <ul class="nav  nav-pills nav-tabs--vertical" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" href="#home"href=".tab-content" target="_self">
+                    <i class="fas fa-user"></i>
+                      المعلومات الشخصية
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#menu1" target="_self">
+                    <i class="fas fa-briefcase"></i>
+                    البيانات الوظيفية
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#menu2" target="_self">
+                    <i class="fas fa-money-bill-alt"></i>
+                    بيانات الراتب والبدلات
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#menu3" target="_self">
+                        <i class="fas fa-folder-open"></i>
+                      بيانات الإجازات
+                    </a>
+                </li>
+                <li class="nav-item">
+                      <a class="nav-link" data-toggle="pill" href="#menu4" target="_self">
+                        <i class="fas fa-address-card"></i>
+                        معلومات الإتصال
+                      </a>
+                </li>
+              </ul>
+				</div>
+				<!-- END MENU -->
+			</div>
+		</div>
+		<div class="col-md-9">
+        <div class="profile-content">
+          <!-- Tab panes -->
+  <div class="tab-content">
+      <div id="home" class="container tab-pane active"><br>
+        <table class="table table-light table-hover">
+            <tbody>
+              <tr>
+                <th>الاسم</th>
+                <td>عبدالخالق محمد عبدالله الشهري</td>
+              </tr>
+              <tr>
+                <th>رقم الهوية</th>
+                <td>1083600104</td>
+              </tr>
+              <tr>
+                  <th>تاريخ الميلاد</th>
+                  <td>22/01/1425</td>
+                </tr>
+                <tr>
+                  <th>مكان المبلاد</th>
+                  <td>أبها</td>
+              </tr>
+              <tr>
+                  <th>الجنس</th>
+                  <td>ذكر</td>
+              </tr>
+              <tr>
+                  <th>الجنسية</th>
+                  <td>سعودي</td>
+              </tr>
+              <tr>
+                    <th>نوع المؤهل</th>
+                    <td>جامعي</td>
+                </tr>
+                <tr>
+                    <th>المؤهل</th>
+                    <td>علوم الحاسب الآلي</td>
+                </tr>
+            </tbody>
+          </table>
+      </div>
+      <div id="menu1" class="container tab-pane fade"><br>
+        <table class="table table-light table-hover">
+            <tbody>
+              <tr>
+                <th>رقم الوظيفة</th>
+                <td>000</td>
+              </tr>
+              <tr>
+                <th>المسمى الوظيفي</th>
+                <td>مطور برامج</td>
+              </tr>
+              <tr>
+                  <th>المرتبة</th>
+                  <td>000</td>
+                </tr>
+                <tr>
+                  <th>الدرجة</th>
+                  <td>1</td>
+              </tr>
+              <tr>
+                  <th>الفئة</th>
+                  <td>الموظفين</td>
+              </tr>
+              <tr>
+                  <th>الإدارةالحالية</th>
+                  <td>إدارة عمليات الحاسب الآلي</td>
+              </tr>
+              <tr>
+                  <th>الإدارة التي يعمل بها</th>
+                  <td>إدارة الخدمات الإلكترونية وإدارة البيانات</td>
+              </tr>
+              <tr>
+                    <th>تاريخ الإلتحاق بالخدمة</th>
+                    <td>جامعي</td>
+                </tr>
+                <tr>
+                    <th>تاريخ الإلتحاق بالهيئة</th>
+                    <td>علوم الحاسب الآلي</td>
+                </tr>
+            </tbody>
+          </table>
+      </div>
+      <div id="menu2" class="container tab-pane fade"><br>
+        <table class="table table-light table-hover">
+            <tbody>
+              <tr>
+                <th>الراتب الأساسي</th>
+                <td>0000</td>
+              </tr>
+              <tr>
+                <th>بدل ....</th>
+                <td>0000</td>
+              </tr>
+              <tr>
+                  <th>بدل ...</th>
+                  <td>0000</td>
+                </tr>
+                <tr>
+                  <th>بدل ....</th>
+                  <td>0000</td>
+              </tr>
+              <tr>
+                  <th>بدل ...</th>
+                  <td>0000</td>
+              </tr>
+              <tr>
+                  <th>الإجمالي</th>
+                  <td>0000</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      <div id="menu3" class="container tab-pane fade"><br>
+        <table class="table table-light table-hover">
+            <tbody>
+              <tr>
+                <th>الرصيد</th>
+                <td>35 يوم</td>
+              </tr>
+              <tr>
+                <th>الرصيد السنوي المستنفذ</th>
+                <td>0000</td>
+              </tr>
+              <tr>
+                  <th>تاريخ آخر إجازة</th>
+                  <td>0000</td>
+                </tr>
+                <tr>
+                  <th>عدد أيام آخر إجازة</th>
+                  <td>0000</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      <div id="menu4" class="container tab-pane fade"><br>
+        <table class="table table-light table-hover">
+            <tbody>
+              <tr>
+                <th>التحويلة الداخلية</th>
+                <td>0000</td>
+              </tr>
+              <tr>
+                <th>البريد الإلكتروني</th>
+                <td>amshehri@stats.gov.sa</td>
+              </tr>
+              <tr>
+                  <th>رقم الجوال</th>
+                  <td>0000</td>
+                </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+        </div>
+    </div>
+  </div>

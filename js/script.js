@@ -54,6 +54,10 @@ app.config(function($routeProvider) {
 		templateUrl : "pages/services.html",
 
 	})
+	.when("/profile", {
+		templateUrl : "pages/profile.html",
+		controller : "profile"
+	})
 });
 
 
@@ -118,6 +122,16 @@ app.controller('missionAndVisionCtrl', function($scope) {
 			 });
 		 });
 		 
+		});
+});
+
+app.controller('profile', function($scope) {
+	$scope.$on('$viewContentLoaded', function(event) {
+		//Your code goes here.
+			$(".profile-usermenu a").click(function(){
+				$("html, body").animate({ scrollTop: 650 });
+
+			});
 		});
 });
 
