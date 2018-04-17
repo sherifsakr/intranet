@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+    <table>
+    <thead><tr><th>الأسم</th><th>الوظيفة</th><th>المؤهل</th><th>عددالسنوات</th><th>رقم الجوال</th><th>الايميل</th><th>الجنسية</th><th>التاريخ</th><th>التخصص</th><th>التخصص</th><th>المدينة \ المنطقة</th></tr></thead>    <tbody> <tr class="odd"><td>مهند عبدالله إبراهيم الحبيب</td><td>محلل ضمان الجودة</td><td>بكالوريوس</td><td>3 - 6</td><td>0554577771</td><td>Muhaned83@gmail.com</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>بكالوريوس نظم معلومات الحاسب الالي</td><td>علوم الحاسب الالي</td><td>الرياض</td> </tr>
+ <tr class="even"><td>مهند عبدالله إبراهيم الحبيب</td><td>دعم فني</td><td>بكالوريوس</td><td>3 - 6</td><td>0554577771</td><td>Muhaned83@gmail.com</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>بكالوريوس نظم معلومات الحاسب الالي - Computer Information Systems</td><td>إدارة أعمال</td><td>الرياض</td> </tr>
+ <tr class="odd"><td>عبدالاله خالد فضل الله نمنكاني</td><td>محلل ضمان الجودة</td><td>بكالوريوس</td><td>3 - 6</td><td>0543434324</td><td>abdullelah.k.n@gmail.com</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>تقنية معلومات</td><td>علوم الحاسب الالي</td><td>جدة</td> </tr>
+ <tr class="even"><td>عبدالاله خالد فضل الله نمنكاني</td><td>محلل ضمان الجودة اول</td><td>بكالوريوس</td><td>3 - 6</td><td>0543434324</td><td>abdullelah.k.n@gmail.com</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>تقنية معلومات</td><td>علوم الحاسب الالي</td><td>جدة</td> </tr>
+ <tr class="odd"><td>عبدالاله خالد فضل الله نمنكاني</td><td>مهندس حاسب آلي</td><td>بكالوريوس</td><td>3 - 6</td><td>0543434324</td><td>abdullelah.k.n@gmail.com</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>تقنية معلومات</td><td>إحصاء  أساليب كمية  بحوث عمليات</td><td>جدة</td> </tr>
+ <tr class="even"><td>عبدالاله خالد فضل الله نمنكاني</td><td>   مدير للنظام System Administrator</td><td>بكالوريوس</td><td>3 - 6</td><td>0543434324</td><td>abdullelah.k.n@gmail.com</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>تقنية معلومات</td><td>إحصاء  أساليب كمية  بحوث عمليات</td><td>جدة</td> </tr>
+ <tr class="odd"><td>عبدالاله خالد فضل الله نمنكاني</td><td>مطور ذكاء الأعمال</td><td>بكالوريوس</td><td>3 - 6</td><td>0543434324</td><td>abdullelah.k.n@gmail.com</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>تقنية معلومات</td><td>إحصاء  أساليب كمية  بحوث عمليات</td><td>جدة</td> </tr>
+ <tr class="even"><td>مريم عبدالرزاق محمد الجشعم </td><td>مطور تطبيقات للأجهزه الذكية</td><td>بكالوريوس</td><td>0 - 3</td><td>0549609990</td><td>ma-mo2009@hotmail.com</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>علوم الحاسب </td><td>علوم الحاسب الالي</td><td>الرياض</td> </tr>
+ <tr class="odd"><td>Arwa Abdullah habdan Alhabdan</td><td>دعم فني</td><td>بكالوريوس</td><td>0 - 3</td><td>00966567114400</td><td>arwaabdullah433@hotmail.com</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>حاسب آلي نظم معلومات</td><td>علوم الحاسب الالي</td><td>الرياض</td> </tr>
+ <tr class="even"><td>Arwa Abdullah habdan Alhabdan</td><td>اخصائي قواعد بيانات oracle</td><td>بكالوريوس</td><td>0 - 3</td><td>00966567114400</td><td>arwaabdullah433@hotmail.com</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>حاسب آلي نظم معلومات</td><td>علوم الحاسب الالي</td><td>الرياض</td> </tr>
+ <tr class="odd"><td>Arwa Abdullah habdan Alhabdan</td><td>مطور تطبيقات للأجهزه الذكية</td><td>بكالوريوس</td><td>0 - 3</td><td>00966567114400</td><td>arwaabdullah433@hotmail.com</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>حاسب آلي نظم معلومات</td><td>علوم الحاسب الالي</td><td>الرياض</td> </tr>
+ <tr class="even"><td>Arwa Abdullah habdan Alhabdan</td><td>محلل ضمان الجودة اول</td><td>بكالوريوس</td><td>0 - 3</td><td>00966567114400</td><td>arwaabdullah433@hotmail.com</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>حاسب آلي نظم معلومات</td><td>علوم الحاسب الالي</td><td>الرياض</td> </tr>
+ <tr class="odd"><td>Arwa Abdullah habdan Alhabdan</td><td>محلل ضمان الجودة</td><td>بكالوريوس</td><td>0 - 3</td><td>00966567114400</td><td>arwaabdullah433@hotmail.com</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>حاسب آلي نظم معلومات</td><td>علوم الحاسب الالي</td><td>الرياض</td> </tr>
+ <tr class="even"><td>محمد سعد محمد المهناء</td><td>مطور ذكاء الأعمال</td><td>بكالوريوس</td><td>6 - 9</td><td>0560068020</td><td>almohana2006@yahoo.com</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>نظم معلومات</td><td>علوم الحاسب الالي</td><td>الرياض</td> </tr>
+ <tr class="odd"><td>عطيه محمد الغروي </td><td>دعم فني</td><td>بكالوريوس</td><td>0 - 3</td><td>0506057733</td><td>GARWI07@GMAIL.COM</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>علوم الحاسب </td><td>علوم الحاسب الالي</td><td>الرياض</td> </tr>
+ <tr class="even"><td>محمد جابر محمد لسلوم اليامي</td><td>مدير لنظام البريد الالكتروني</td><td>الماجستير</td><td>6 - 9</td><td>0566157111</td><td>mohmmed.yami@hotmail.com</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>علوم الحاسب الالي</td><td>علوم الحاسب الالي</td><td>الرياض</td> </tr>
+ <tr class="odd"><td>تركي محمد موسى الربعي</td><td>محلل ضمان الجودة</td><td>بكالوريوس</td><td>3 - 6</td><td>0551384774</td><td>m.turki555@gmail.com</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>علوم حاسب </td><td>علوم الحاسب الالي</td><td>الرياض</td> </tr>
+ <tr class="even"><td>مريم عبدالله محمد النخلى</td><td>محلل ضمان الجودة</td><td>الماجستير</td><td>0 - 3</td><td>0580229647</td><td>maryamalnakhli91@gmail.com</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>علوم حاسب</td><td>علوم الحاسب الالي</td><td>الرياض</td> </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

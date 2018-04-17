@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+    <table>
+    <thead><tr><th>الأسم</th><th>الوظيفة</th><th>المؤهل</th><th>عددالسنوات</th><th>رقم الجوال</th><th>الايميل</th><th>الجنسية</th><th>التاريخ</th><th>التخصص</th><th>التخصص</th><th>المدينة \ المنطقة</th></tr></thead>    <tbody> <tr class="odd"><td>شعيفان بن متعب بن بادي بن قويد</td><td>باحث إحصاء</td><td>بكالوريوس</td><td>3 - 6</td><td>0553033999</td><td>saldosari@bog.gov.sa</td><td>المملكة العربية السعودية</td><td>2018/04/17</td><td>إحصاء</td><td>إحصاء  أساليب كمية  بحوث عمليات</td><td>الرياض</td> </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
