@@ -1,0 +1,335 @@
+<style>
+    .content-lib{
+        background-color: #f5f5f5;
+        padding: 10px;
+    }
+    .links {
+        line-height: 1.5em;
+        margin: 0 auto;
+        padding: 2em 0 3em;
+        width: 90%;
+        max-width: 1000px;
+        overflow: hidden;
+    }
+    #text_search{
+        background-image: url(images/search.png);
+        background-position: 99%;
+        background-repeat: no-repeat;
+        background-size: 22px;
+        padding-right: 36px;
+        font-size: 17px
+    }
+    
+    table {
+        border-collapse: collapse;
+        margin-bottom: 3em;
+        width: 100%;
+        background: #fff;
+    }
+    td, th {
+        padding: 0.75em 1.5em;
+        text-align: center;
+    }
+        td.err {
+            background-color: #e992b9;
+            color: #fff;
+            font-size: 0.75em;
+            text-align: center;
+            line-height: 1;
+        }
+    th {
+        background-color: #03A9F4;
+        font-weight: bold;
+        color: #fff;
+        white-space: nowrap;
+    }
+    tbody th {
+        background-color: #2ea879;
+    }
+    tbody tr:nth-child(2n-1) {
+        background-color: #f5f5f5;
+        transition: all .125s ease-in-out;
+    }
+    tbody tr:hover {
+        background-color: #eaf8ff;
+    }
+    #links .btn{
+        font-family: inherit !important;
+        font-weight: bold !important;
+        background-color: #008e9a !important;
+        border: none !important;
+    }
+    #links .btn:hover{
+        background-color: #0b6f79 !important;
+        border: none !important;
+        cursor: pointer;
+    }
+    .modal-body .btn{
+        font-family: inherit !important;
+        font-weight: bold !important;
+        background-color: #008e9a !important;
+        border: none !important;
+        color: white !important;
+    }
+    .modal-body .btn:hover{
+        background-color: #0b6f79 !important;
+        border: none !important;
+        cursor: pointer;
+    }
+    .title-page h3{
+        color: steelblue;
+    }
+    .content-lib table{
+        width: 100% !important;
+    }
+    .table-links{
+        overflow: hidden;
+    }
+    </style>
+<div class="row content-lib">
+    <div class="col-12">
+            <div class="row">
+                    <div class="title-page col-12">
+                        <span>
+                            <h3>
+                                المكتبة الرقمية
+                            </h3>
+                        </span>
+                    </div>
+                    <div class="disc-page col-12">
+                        <p class="text-disc">
+                            تهدف لرفع كفاءة منسوبي الهيئة كمرجع فني للأثراء المعرفي ونقل الخبرات من الخبراء والمستشارين إلى منسوبي الهيئة وذلك بعرض أعمال الإدارات الإحصائية المتنوعة لدى الهيئة .
+                        </p>
+                    </div>
+                
+                    <div class="search-in col-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="text_search" onkeyup="search()" placeholder="ابحث عن مادة">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="table-links col-12">
+                            <div class="component col-12">
+                                    <table id="links">
+                                        <thead>
+            
+                                            <tr>
+                                                <th>عنوان المادة</th>
+                                                <th>وصف المادة</th>
+                                                <th>المرفقات</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>المعسكر التدريبي لتحليل البيانات - هولندا</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> عرض الوصف </button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalDownload"> عرض الملفات </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>مسح المنشآت السياحية</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> عرض الوصف </button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalDownload"> عرض الملفات </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>مسح التوظف والأجور</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> عرض الوصف </button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalDownload"> عرض الملفات </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>التعليم والتدريب</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> عرض الوصف </button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalDownload"> عرض الملفات </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>التجارة الداخلية</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2"> عرض الوصف </button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalDownload"> عرض الملفات </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>إحصاءات التأمين</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> عرض الوصف </button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalDownload"> عرض الملفات </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                    <td>الاستثمار الاجنبي</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> عرض الوصف </button>
+                                                    </td>
+                                                    <td>
+                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalDownload"> عرض الملفات </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>إحصائيات استخدام تقنيات المعلومات والاتصالات لدى المنشآت و الاسر والافراد</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> عرض الوصف </button>
+                                                    </td>
+                                                    <td>
+                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalDownload"> عرض المللفات </button>
+                                                    </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                    </div>
+                </div>
+    </div>
+    <!-- The Modal -->
+<div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">المعسكر التدريبي لتحليل البيانات - هولندا</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <p>
+                    عقد الملتقى السنوي  "EMEA Experience Analytics Bootcamp  و الذي تنظمه شركة ديلويت (Deloitte) في امستردام – هولندا للفترة من 15-16/3/2018  و تم خلال فعاليات الملتقى عقد اكثر من 30 محاضرة و ورش عمل ركزت على المحاور التالية :<br>
+                    <ul type="square">
+                        <li>
+                                علم البيانات (Data science)
+                        </li>
+                        <li>
+                                تحليل البيانات (Data Analytics)
+                        </li>
+                        <li>
+                                تكنولوجيا الحوسبة السحابية (IT cloud Technology)
+                        </li>
+                        <li>
+                                تكنولوجيا البيانات الضخمة (Big Data Technology)
+                        </li>
+                        <li>
+                            توجهات البنية التحتية التقنية ( IT infrastructure Trends)
+                        </li><br>
+                    </ul>
+                        وحاضر و شارك في هذا الملتقى العديد من المختصين في علم البيانات و تحليله و كذلك المختصين في انظمة البنية التحتية و البيانات الضخمة عرض من خلال الملتقى التوجه العالمي للاستفادة من البيانات المتاحة و المستخرجة من المصادر المختلفة و خاصة وسائل التواصل الاجتماعي (Social media) و كذلك الحساسات (Sensors)  و امكانية استخدام تقنية الذكاء الاعمال (BI) في تمثيل البيانات بطرق مبتكرة و العديد من التفرعات التقنية المهمة. و كان النمط المستخدم في التقديم للمحاضرة و ورش العمل بان يقدم المبدأ التقني نظريا (Technical concept) و من بعد ذلك تتم اسقاط المفهوم على تقنية مطبقة من خلال الشركات التقنية المشاركة في الملتقى (IT partners).
+
+وتم اجراء العديد من التجارب لإثبات صحة و امكانية التطبيق من خلال (Study Cases) يتم مشاركة جميع المتواجدين كل حسب الاهتمام و التخصص.
+
+              </p>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modal -->
+<div class="modal fade" id="myModal2">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">المعسكر التدريبي لتحليل البيانات - هولندا</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <p>
+                لتعرف على أهمية  قطاع التجارة الداخلية ومساهمته في الناتج المحلي الإجمالي  وكيفية  توفير الفرص التشغيلية للأيدي العاملة.  واهتمام   الأجهزة الإحصائية  في معظم الدول العربية لإجراء  مسح سنوي بالعينة للمنشآت العاملة في تجارة الجملة وتجارة التجزئة وإصلاح وصيانة المركبات.<br>
+
+                    وما يمثله من  مؤشر سريع لمعدلات النمو الاقتصادي ونسبة مشاركة القطاعات في الناتج المحلي الإجمالي.
+                    
+                    أقيمت هذه الورشة بتاريخ 20.12.2017
+              </p>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="myModalDownload">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">المعسكر التدريبي لتحليل البيانات - الملفات</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                        <table class="table table-hover">
+                                <thead>
+                                  <tr>
+                                    <th>عنوان الملف</th>
+                                    <th>تحميل</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>An introduction to deep learning</td>
+                                    <td>
+                                        <a href="http://portal.stats.gov.sa/cms_v1/sites/default/files/digital-lib/an_introduction_to_deep_learning.pdf" target="_blank" class="btn btn-primary">
+                                            تحميل 
+                                        </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>start_cognitive_now_what_it_is_and_how_to_deliver_it</td>
+                                    <td>
+                                            <a href="http://portal.stats.gov.sa/cms_v1/sites/default/files/digital-lib/start_cognitive_now_what_it_is_and_how_to_deliver_it.pdf" target="_blank" class="btn btn-primary">
+                                                تحميل 
+                                            </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>supply chain control tower</td>
+                                    <td>
+                                            <a href="http://portal.stats.gov.sa/cms_v1/sites/default/files/digital-lib/supply_chain_control_tower.pdf" target="_blank" class="btn btn-primary">
+                                                تحميل 
+                                            </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+</div>

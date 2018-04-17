@@ -46,10 +46,6 @@ app.config(function($routeProvider) {
         controller : "regulationsPolicies"
     
 	})
-	.when("/profile", {
-		templateUrl : "pages/profile.html",
-
-	})
 	.when("/services", {
 		templateUrl : "pages/services.html",
 
@@ -57,6 +53,10 @@ app.config(function($routeProvider) {
 	.when("/profile", {
 		templateUrl : "pages/profile.html",
 		controller : "profile"
+	})
+	.when("/digital-library", {
+		templateUrl : "pages/digitalLib.html",
+		controller : "digital-library"
 	})
 });
 
@@ -132,6 +132,18 @@ app.controller('profile', function($scope) {
 				$("html, body").animate({ scrollTop: 650 });
 
 			});
+		});
+});
+
+app.controller('digital-library', function($scope) {
+	$scope.$on('$viewContentLoaded', function(event) {
+		//Your code goes here.
+		$("#text_search").on("keyup", function() {
+			var value = $(this).val().toLowerCase();
+			$("#links tbody tr").filter(function() {
+			  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+			});
+		  });
 		});
 });
 
