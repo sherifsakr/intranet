@@ -89,6 +89,71 @@
 .profile-usermenu  .active{
   color:  #5b9bd1 !important;
 }
+
+
+table {
+  border-collapse: separate;
+  background: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: -1em !important;
+  width: 100%;
+}
+
+thead th {
+  font-size: 16px;
+  color: #fff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #646f7f), color-stop(100%, #4a5564));
+  background-image: -moz-linear-gradient(#646f7f, #4a5564);
+  background-image: -webkit-linear-gradient(#646f7f, #4a5564);
+  background-image: linear-gradient(#155a75, #6baee8);
+  border-top: 1px solid #858d99;
+  text-align: center;
+}
+tbody tr th{
+  padding: 11px;
+  text-align: center;
+  width: 30%;
+}
+tbody tr td {
+  font-weight: 400;
+  color: #5f6062;
+  font-size: 16px;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+tbody tr:nth-child(2n) {
+  background: #f0f3f5;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody:hover > tr td {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  /* uncomment for blur effect */
+  /* color:transparent;
+  @include text-shadow(0px 0px 2px rgba(0,0,0,0.8));*/
+}
+
+tbody:hover > tr:hover td {
+  text-shadow: none;
+  color: #2d2d2d;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+
 </style>
 
 <div class="row profile-page" id="ex">
@@ -152,8 +217,13 @@
         <div class="profile-content">
           <!-- Tab panes -->
   <div class="tab-content">
-      <div id="home" class="container tab-pane active"><br>
-        <table class="table table-light table-hover">
+      <div id="home" class="container tab-pane active">
+          <table>
+            <thead>
+                <tr>
+                    <th colspan="2">البيانات الشخصية</th>
+                </tr>
+            </thead>
             <tbody>
               <tr>
                 <th>الاسم</th>
@@ -188,10 +258,19 @@
                     <td>علوم الحاسب الآلي</td>
                 </tr>
             </tbody>
-          </table>
+        </table>
+
+          <!-- End edit-->
       </div>
-      <div id="menu1" class="container tab-pane fade"><br>
-        <table class="table table-light table-hover">
+      <div id="menu1" class="container tab-pane fade">
+        <table>
+          <thead>
+          <tr>
+            <th colspan="2">
+              البيانات الوظيفية
+            </th>
+          </tr>
+          <thead></thead>
             <tbody>
               <tr>
                 <th>رقم الوظيفة</th>
@@ -232,8 +311,15 @@
             </tbody>
           </table>
       </div>
-      <div id="menu2" class="container tab-pane fade"><br>
-        <table class="table table-light table-hover">
+      <div id="menu2" class="container tab-pane fade">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">
+                بيانات الراتب والبدلات
+              </th>
+            </tr>
+          </thead>
             <tbody>
               <tr>
                 <th>الراتب الأساسي</th>
@@ -262,8 +348,15 @@
             </tbody>
           </table>
       </div>
-      <div id="menu3" class="container tab-pane fade"><br>
-        <table class="table table-light table-hover">
+      <div id="menu3" class="container tab-pane fade">
+        <table class="">
+            <thead>
+                <tr>
+                  <th colspan="2">
+                    بيانات الإجازات
+                  </th>
+                </tr>
+              </thead>
             <tbody>
               <tr>
                 <th>الرصيد</th>
@@ -284,8 +377,15 @@
             </tbody>
           </table>
       </div>
-      <div id="menu4" class="container tab-pane fade"><br>
+      <div id="menu4" class="container tab-pane fade">
         <table class="table table-light table-hover">
+            <thead>
+                <tr>
+                  <th colspan="2">
+                    معلومات الإتصال
+                  </th>
+                </tr>
+              </thead>
             <tbody>
               <tr>
                 <th>التحويلة الداخلية</th>
