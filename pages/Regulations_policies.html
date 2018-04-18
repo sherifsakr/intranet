@@ -1,552 +1,695 @@
 <style>
-    
-    table{
+    table {
         width: 100%;
     }
-    .reg-poli a{
+    
+    .reg-poli a {
         color: white !important;
         border-left: 0 !important;
         border-radius: 0 !important;
     }
-    .reg-poli .active{
+    
+    .reg-poli .active {
         color: #00639a !important;
     }
-    .reg-poli a:hover{
+    
+    .reg-poli a:hover {
         color: rgb(0, 99, 154) !important;
     }
-   
+    
     .nav-tabs--vertical {
-  border-bottom: none;
-  border-right: 1px solid #ddd;
-  display: flex;
-  flex-flow: column nowrap;
-}
-.nav-tabs--left {
-  margin: 0 15px;
-}
-
-.nav-tabs--left .nav-item + .nav-item {
-  margin-top: .25rem;
-}
-
-.nav-tabs--left .nav-link {
-  transition: border-color .125s ease-in;
-  white-space: nowrap;
-}
-.nav-tabs--left .nav-link:hover {
-  background-color: #f7f7f7;
-}
-.nav-tabs--left .nav-link.active {
-  border-bottom: 0;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 0;
-  margin-right: -1px;
-}
-.nav-item .active{
-    	background-color: #ecf0f1 !important;
+        border-bottom: none;
+        border-right: 1px solid #ddd;
+        display: flex;
+        flex-flow: column nowrap;
     }
-.deps .nav-tabs--vertical{
-	margin-right: -15px !important;
-}
-.deps .nav-item{
-	margin-top: 13px;
-	margin-right: 0 !important;
-}
-.reg-poli-top,reg-poli-side{
-	background-color: #36a9e0;
-}
-
-.modal-header{
-	background-color: #00639a;
-	color: white;
-	}
-	.departments{
-		border-bottom-right-radius: 10px;
-	}
-	.reg-poli{
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
-	}
-	#regulations .flex-row{
-		background-color: #ecf0f1 !important; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;
-		 margin-top: 15px !important;
-	}
-	
-	#policies .flex-row{
-		background-color: #ecf0f1 !important; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;
-		margin-top: 15px !important;
-	}
-	table td{
-  border:2px dotted rgb(78, 186, 147)!important;
- 
-}
+    
+    .nav-tabs--left {
+        margin: 0 15px;
+    }
+    
+    .nav-tabs--left .nav-item+.nav-item {
+        margin-top: .25rem;
+    }
+    
+    .nav-tabs--left .nav-link {
+        transition: border-color .125s ease-in;
+        white-space: nowrap;
+    }
+    
+    .nav-tabs--left .nav-link:hover {
+        background-color: #f7f7f7;
+    }
+    
+    .nav-tabs--left .nav-link.active {
+        border-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0;
+        margin-right: -1px;
+    }
+    
+    .nav-item .active {
+        background-color: #ecf0f1 !important;
+    }
+    
+    .deps .nav-tabs--vertical {
+        margin-right: -15px !important;
+    }
+    
+    .deps .nav-item {
+        margin-top: 13px;
+        margin-right: 0 !important;
+    }
+    
+    .reg-poli-top,
+    reg-poli-side {
+        background-color: #36a9e0;
+    }
+    
+    .modal-header {
+        background-color: #00639a;
+        color: white;
+    }
+    
+    .departments {
+        border-bottom-right-radius: 10px;
+    }
+    
+    .reg-poli {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    #regulations .flex-row {
+        background-color: #ecf0f1 !important;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin-top: 15px !important;
+    }
+    
+    #policies .flex-row {
+        background-color: #ecf0f1 !important;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin-top: 15px !important;
+    }
+    
+    table td {
+        border: 2px dotted rgb(78, 186, 147)!important;
+        text-align: center !important;
+    }
 </style>
 <div class="row">
     <div class="col-12">
         <ul class="nav nav-tabs reg-poli reg-poli-top">
-        <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab" href="#regulations" target="_self">اللوائح</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#policies" target="_self">السياسات</a>
-        </li>
-    	</ul>
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#regulations" target="_self">اللوائح</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#policies" target="_self">السياسات</a>
+            </li>
+        </ul>
 
-      
-      <!-- Tab panes -->
-      <div class="row tab-content reg-poli ">
-      	<div class="tab-pane active container" id="regulations">
-      		<div class=" d-flex flex-row mt-2">
-      			<div class="col-lg-3 col-md-3 col-sm-3 col-12 deps">
-                    <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left reg-poli-top departments" role="navigation">
-                        <li class="nav-item">
-                           <a href="#hr" class="nav-link active" data-toggle="tab" role="tab" aria-controls="hr" target="_self">الموارد البشرية</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#it" class="nav-link" data-toggle="tab" role="tab" aria-controls="it" target="_self">التقنية وأمن المعلومات</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#admin_affairs" class="nav-link" data-toggle="tab" role="tab" aria-controls="admin_affairs" target="_self">الشئؤن الإدارية</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#financial_affairs" class="nav-link" data-toggle="tab" role="tab" aria-controls="financial_affairs" target="_self">الشئؤون المالية</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#general_regulations" class="nav-link" data-toggle="tab" role="tab" aria-controls="general_regulations" target="_self">سياسات عامة</a>
-                        </li>
-                    </ul>
-                </div> <!-- End col for taps inside regulations -->
-                
-                <div class="col-lg-9 col-md-9 col-12">
-                  	<div class="tab-content">
-                        <div class="tab-pane fade show active" id="hr" role="tabpanel">
-                        	<table class="table table-hover">
-                            	<thead>
-                                 	<tr>
-                                       <th scope="col">#</th>
-                                       <th scope="col">اللائحة</th>
-                                       <th scope="col">عدد الصفحات</th>
-                                       <th scope="col">تاريخ النشر</th>
-                                       <th scope="col">التفاصيل</th>
-                                    </tr>
-                              	</thead>
-                                <tbody>
-                                	<tr>
-                                    	<th scope="row">1</th>
-                                        <td>Hr</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
+
+        <!-- Tab panes -->
+        <div class="row tab-content reg-poli ">
+            <div class="tab-pane active container" id="regulations">
+                <div class=" d-flex flex-row mt-2">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-12 deps">
+                        <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left reg-poli-top departments" role="navigation">
+                            <li class="nav-item">
+                                <a href="#hr" class="nav-link active" data-toggle="tab" role="tab" aria-controls="hr" target="_self">الموارد البشرية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#it" class="nav-link" data-toggle="tab" role="tab" aria-controls="it" target="_self">التقنية وأمن المعلومات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#admin_affairs" class="nav-link" data-toggle="tab" role="tab" aria-controls="admin_affairs" target="_self">الشئؤن الإدارية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#financial_affairs" class="nav-link" data-toggle="tab" role="tab" aria-controls="financial_affairs" target="_self">الشئؤون المالية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#general_regulations" class="nav-link" data-toggle="tab" role="tab" aria-controls="general_regulations" target="_self">سياسات عامة</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End col for taps inside regulations -->
+
+                    <div class="col-lg-9 col-md-9 col-12">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="hr" role="tabpanel">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">اللائحة</th>
+                                            <th scope="col">عدد الصفحات</th>
+                                            <th scope="col">تاريخ النشر</th>
+                                            <th scope="col">التفاصيل</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Hr</td>
+                                            <td>3</td>
+                                            <td>2017/07/18</td>
+                                            <td>
+                                                <a data-toggle="modal" href="#myModal" target="_self">
                                              	 عرض
                                             </a>
-                                        </td>
-                                   	</tr>
-                                    <tr>
-                                     	<th scope="row">2</th>
-                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
+                                            <td>3</td>
+                                            <td>2017/07/18</td>
+                                            <td>
+                                                <a data-toggle="modal" href="#myModal" target="_self">
                                                  عرض
                                         	</a>
-                                        </td>
-                                    </tr>
-                            	</tbody>
-                        	</table>
-                    	</div><!-- End hr -->
-                    	<div class="tab-pane fade" id="it" role="tabpanel">
-                        	<table class="table table-hover">
-                            	<thead>
-                                 	<tr>
-                                       <th scope="col">#</th>
-                                       <th scope="col">اللائحة</th>
-                                       <th scope="col">عدد الصفحات</th>
-                                       <th scope="col">تاريخ النشر</th>
-                                       <th scope="col">التفاصيل</th>
-                                    </tr>
-                              	</thead>
-                                <tbody>
-                                	<tr>
-                                    	<th scope="row">1</th>
-                                        <td>IT</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End hr -->
+                            <div class="tab-pane fade" id="it" role="tabpanel">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">اللائحة</th>
+                                            <th scope="col">عدد الصفحات</th>
+                                            <th scope="col">تاريخ النشر</th>
+                                            <th scope="col">التفاصيل</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>IT</td>
+                                            <td>3</td>
+                                            <td>2017/07/18</td>
+                                            <td>
+                                                <a data-toggle="modal" href="#myModal" target="_self">
                                              	 عرض
                                             </a>
-                                        </td>
-                                   	</tr>
-                                    <tr>
-                                     	<th scope="row">2</th>
-                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
+                                            <td>3</td>
+                                            <td>2017/07/18</td>
+                                            <td>
+                                                <a data-toggle="modal" href="#myModal" target="_self">
                                                  عرض
                                         	</a>
-                                        </td>
-                                    </tr>
-                            	</tbody>
-                        	</table>
-                    	</div><!-- End it -->
-                    	<div class="tab-pane fade" id="admin_affairs" role="tabpanel">
-                        	<table class="table table-hover">
-                            	<thead>
-                                 	<tr>
-                                       <th scope="col">#</th>
-                                       <th scope="col">اللائحة</th>
-                                       <th scope="col">عدد الصفحات</th>
-                                       <th scope="col">تاريخ النشر</th>
-                                       <th scope="col">التفاصيل</th>
-                                    </tr>
-                              	</thead>
-                                <tbody>
-                                	<tr>
-                                    	<th scope="row">1</th>
-                                        <td>Administrative affairs</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End it -->
+                            <div class="tab-pane fade" id="admin_affairs" role="tabpanel">
+                                <table class="views-table cols-5 table table-hover table-bordered table-hover table-0">
+                                    <thead>
+                                        <tr>
+                                            <th class="views-field views-field-counter">
+                                                # </th>
+                                            <th class="views-field views-field-title">
+                                                الاسم </th>
+                                            <th class="views-field views-field-field-page-number">
+                                                عدد الصفحات </th>
+                                            <th class="views-field views-field-created">
+                                                تاريخ النشر </th>
+                                            <th class="views-field views-field-yearcount">
+                                                التفاصيل </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd views-row-first">
+                                            <td class="views-field views-field-counter">
+                                                1 </td>
+                                            <td class="views-field views-field-title">
+                                                الهيكل التنظيمي للهيئة العامة للإحصاء.</td>
+                                            <td class="views-field views-field-field-page-number">
+                                                79 </td>
+                                            <td class="views-field views-field-created">
+                                                2017/07/05 </td>
+                                            <td class="views-field views-field-title">
+                                                <a href="/cms_v1/ar/node/243">عرض</a> </td>
+                                        </tr>
+                                        <tr class="even">
+                                            <td class="views-field views-field-counter">
+                                                2 </td>
+                                            <td class="views-field views-field-title">
+                                                الأهداف الاستراتيجية ومؤشرات الأداء. </td>
+                                            <td class="views-field views-field-field-page-number">
+                                                6 </td>
+                                            <td class="views-field views-field-created">
+                                                2017/07/05 </td>
+                                            <td class="views-field views-field-title">
+                                                <a href="/cms_v1/ar/node/255">عرض </a> </td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td class="views-field views-field-counter">
+                                                3 </td>
+                                            <td class="views-field views-field-title">
+                                                لائحة عمل مجلس إدارة الهيئة. </td>
+                                            <td class="views-field views-field-field-page-number">
+                                                14 </td>
+                                            <td class="views-field views-field-created">
+                                                2017/07/05 </td>
+                                            <td class="views-field views-field-title">
+                                                <a href="/cms_v1/ar/node/252">عرض </a> </td>
+                                        </tr>
+                                        <tr class="even">
+                                            <td class="views-field views-field-counter">
+                                                4 </td>
+                                            <td class="views-field views-field-title">
+                                                اللجنة التنسيقية. </td>
+                                            <td class="views-field views-field-field-page-number">
+                                                7 </td>
+                                            <td class="views-field views-field-created">
+                                                2017/07/05 </td>
+                                            <td class="views-field views-field-title">
+                                                <a href="/cms_v1/ar/node/244">عرض </a> </td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td class="views-field views-field-counter">
+                                                5 </td>
+                                            <td class="views-field views-field-title">
+                                                اللجان المنبثقة عن مجلس إدارة الهيئة. </td>
+                                            <td class="views-field views-field-field-page-number">
+                                                12 </td>
+                                            <td class="views-field views-field-created">
+                                                2017/07/05 </td>
+                                            <td class="views-field views-field-title">
+                                                <a href="/cms_v1/ar/node/247">عرض </a> </td>
+                                        </tr>
+                                        <tr class="even views-row-last">
+                                            <td class="views-field views-field-counter">
+                                                6 </td>
+                                            <td class="views-field views-field-title">
+                                                اللائحة الإدارية. </td>
+                                            <td class="views-field views-field-field-page-number">
+                                                8 </td>
+                                            <td class="views-field views-field-created">
+                                                2017/07/05 </td>
+                                            <td class="views-field views-field-title">
+                                                <a href="/cms_v1/ar/node/253">عرض </a> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End Administrative affairs -->
+                            <div class="tab-pane fade" id="financial_affairs" role="tabpanel">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                # </th>
+                                            <th>
+                                                الأسم </th>
+                                            <th>
+                                                عدد الصفحات </th>
+                                            <th>
+                                                تاريخ النشر </th>
+                                            <th>
+                                                عدد مرات المشاهدة </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                1 </td>
+                                            <td>
+                                                اللائحة المالية </td>
+                                            <td>
+                                                32 </td>
+                                            <td>
+                                                2017/07/05 </td>
+                                            <td>
+                                                <a href="/cms_v1/ar/node/242">عرض</a> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End financial_affairs -->
+                            <div class="tab-pane fade" id="general_regulations" role="tabpanel">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">اللائحة</th>
+                                            <th scope="col">عدد الصفحات</th>
+                                            <th scope="col">تاريخ النشر</th>
+                                            <th scope="col">التفاصيل</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>General Regulations</td>
+                                            <td>3</td>
+                                            <td>2017/07/18</td>
+                                            <td>
+                                                <a data-toggle="modal" href="#myModal" target="_self">
                                              	 عرض
                                             </a>
-                                        </td>
-                                   	</tr>
-                                    <tr>
-                                     	<th scope="row">2</th>
-                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
+                                            <td>3</td>
+                                            <td>2017/07/18</td>
+                                            <td>
+                                                <a data-toggle="modal" href="#myModal" target="_self">
                                                  عرض
                                         	</a>
-                                        </td>
-                                    </tr>
-                            	</tbody>
-                        	</table>
-                    	</div><!-- End Administrative affairs -->
-                    	<div class="tab-pane fade" id="financial_affairs" role="tabpanel">
-                        	<table class="table table-hover">
-                            	<thead>
-                                 	<tr>
-                                       <th scope="col">#</th>
-                                       <th scope="col">اللائحة</th>
-                                       <th scope="col">عدد الصفحات</th>
-                                       <th scope="col">تاريخ النشر</th>
-                                       <th scope="col">التفاصيل</th>
-                                    </tr>
-                              	</thead>
-                                <tbody>
-                                	<tr>
-                                    	<th scope="row">1</th>
-                                        <td>Financial Affairs</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
-                                             	 عرض
-                                            </a>
-                                        </td>
-                                   	</tr>
-                                    <tr>
-                                     	<th scope="row">2</th>
-                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
-                                                 عرض
-                                        	</a>
-                                        </td>
-                                    </tr>
-                            	</tbody>
-                        	</table>
-                    	</div><!-- End financial_affairs -->
-                    	<div class="tab-pane fade" id="general_regulations" role="tabpanel">
-                        	<table class="table table-hover">
-                            	<thead>
-                                 	<tr>
-                                       <th scope="col">#</th>
-                                       <th scope="col">اللائحة</th>
-                                       <th scope="col">عدد الصفحات</th>
-                                       <th scope="col">تاريخ النشر</th>
-                                       <th scope="col">التفاصيل</th>
-                                    </tr>
-                              	</thead>
-                                <tbody>
-                                	<tr>
-                                    	<th scope="row">1</th>
-                                        <td>General Regulations</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
-                                             	 عرض
-                                            </a>
-                                        </td>
-                                   	</tr>
-                                    <tr>
-                                     	<th scope="row">2</th>
-                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
-                                                 عرض
-                                        	</a>
-                                        </td>
-                                    </tr>
-                            	</tbody>
-                        	</table>
-                    	</div><!-- End financial_affairs -->
-                   	</div><!-- End tap content -->
-                </div> <!-- End col for col of contnet taps -->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End financial_affairs -->
+                        </div>
+                        <!-- End tap content -->
+                    </div>
+                    <!-- End col for col of contnet taps -->
+                </div>
             </div>
-        </div> <!-- End Regulations -->
-        <div class="tab-pane container" id="policies">
-      		<div class=" d-flex flex-row mt-2">
-      			<div class="col-lg-3 col-md-3 col-12 deps">
-                    <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left reg-poli-top departments" role="navigation">
-                        <li class="nav-item">
-                           <a href="#hr_p" class="nav-link active" data-toggle="tab" role="tab" aria-controls="hr_p" target="_self">الموارد البشرية</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#it_p" class="nav-link" data-toggle="tab" role="tab" aria-controls="it_p" target="_self">التقنية وأمن المعلومات</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#admin_affairs_p" class="nav-link" data-toggle="tab" role="tab" aria-controls="admin_affairs_p" target="_self">الشئؤن الإدارية</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#financial_affairs_p" class="nav-link" data-toggle="tab" role="tab" aria-controls="financial_affairs_p" target="_self">الشئؤون المالية</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#general_regulations_p" class="nav-link" data-toggle="tab" role="tab" aria-controls="general_regulations_p" target="_self">سياسات عامة</a>
-                        </li>
-                    </ul>
-                </div> <!-- End col for taps inside regulations -->
-                
-                <div class="col-lg-9 col-md-9 col-12">
-                  	<div class="tab-content">
-                        <div class="tab-pane fade show active" id="hr_p" role="tabpanel">
-                        	<table class="table table-hover">
-                            	<thead>
-                                 	<tr>
-                                       <th scope="col">#</th>
-                                       <th scope="col">اللائحة</th>
-                                       <th scope="col">عدد الصفحات</th>
-                                       <th scope="col">تاريخ النشر</th>
-                                       <th scope="col">التفاصيل</th>
-                                    </tr>
-                              	</thead>
-                                <tbody>
-                                	<tr>
-                                    	<th scope="row">1</th>
-                                        <td>Hr</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
+            <!-- End Regulations -->
+            <div class="tab-pane container" id="policies">
+                <div class=" d-flex flex-row mt-2">
+                    <div class="col-lg-3 col-md-3 col-12 deps">
+                        <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left reg-poli-top departments" role="navigation">
+                            <li class="nav-item">
+                                <a href="#hr_p" class="nav-link active" data-toggle="tab" role="tab" aria-controls="hr_p" target="_self">الموارد البشرية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#it_p" class="nav-link" data-toggle="tab" role="tab" aria-controls="it_p" target="_self">التقنية وأمن المعلومات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#admin_affairs_p" class="nav-link" data-toggle="tab" role="tab" aria-controls="admin_affairs_p" target="_self">الشئؤن الإدارية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#financial_affairs_p" class="nav-link" data-toggle="tab" role="tab" aria-controls="financial_affairs_p" target="_self">الشئؤون المالية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#general_regulations_p" class="nav-link" data-toggle="tab" role="tab" aria-controls="general_regulations_p" target="_self">سياسات عامة</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End col for taps inside regulations -->
+
+                    <div class="col-lg-9 col-md-9 col-12">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="hr_p" role="tabpanel">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">اللائحة</th>
+                                            <th scope="col">عدد الصفحات</th>
+                                            <th scope="col">تاريخ النشر</th>
+                                            <th scope="col">التفاصيل</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Hr</td>
+                                            <td>3</td>
+                                            <td>2017/07/18</td>
+                                            <td>
+                                                <a data-toggle="modal" href="#myModal" target="_self">
                                              	 عرض
                                             </a>
-                                        </td>
-                                   	</tr>
-                                    <tr>
-                                     	<th scope="row">2</th>
-                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
+                                            <td>3</td>
+                                            <td>2017/07/18</td>
+                                            <td>
+                                                <a data-toggle="modal" href="#myModal" target="_self">
                                                  عرض
                                         	</a>
-                                        </td>
-                                    </tr>
-                            	</tbody>
-                        	</table>
-                    	</div><!-- End hr -->
-                    	<div class="tab-pane fade" id="it_p" role="tabpanel">
-                        	<table class="table table-hover">
-                            	<thead>
-                                 	<tr>
-                                       <th scope="col">#</th>
-                                       <th scope="col">اللائحة</th>
-                                       <th scope="col">عدد الصفحات</th>
-                                       <th scope="col">تاريخ النشر</th>
-                                       <th scope="col">التفاصيل</th>
-                                    </tr>
-                              	</thead>
-                                <tbody>
-                                	<tr>
-                                    	<th scope="row">1</th>
-                                        <td>IT</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End hr -->
+                            <div class="tab-pane fade" id="it_p" role="tabpanel">
+                                <table class="views-table cols-5 table table-hover table-bordered table-hover table-0">
+                                    <thead>
+                                        <tr>
+                                            <th class="views-field views-field-counter">
+                                                # </th>
+                                            <th class="views-field views-field-title">
+                                                الاسم </th>
+                                            <th class="views-field views-field-field-page-number">
+                                                عدد الصفحات </th>
+                                            <th class="views-field views-field-created">
+                                                تاريخ النشر </th>
+                                            <th class="views-field views-field-yearcount">
+                                                التفاصيل </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd views-row-first">
+                                            <td class="views-field views-field-counter">
+                                                1 </td>
+                                            <td class="views-field views-field-title">
+                                                الهيكل التنظيمي للهيئة العامة للإحصاء.</td>
+                                            <td class="views-field views-field-field-page-number">
+                                                79 </td>
+                                            <td class="views-field views-field-created">
+                                                2017/07/05 </td>
+                                            <td class="views-field views-field-title">
+                                                <a href="/cms_v1/ar/node/243">عرض</a> </td>
+                                        </tr>
+                                        <tr class="even">
+                                            <td class="views-field views-field-counter">
+                                                2 </td>
+                                            <td class="views-field views-field-title">
+                                                الأهداف الاستراتيجية ومؤشرات الأداء. </td>
+                                            <td class="views-field views-field-field-page-number">
+                                                6 </td>
+                                            <td class="views-field views-field-created">
+                                                2017/07/05 </td>
+                                            <td class="views-field views-field-title">
+                                                <a href="/cms_v1/ar/node/255">عرض </a> </td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td class="views-field views-field-counter">
+                                                3 </td>
+                                            <td class="views-field views-field-title">
+                                                لائحة عمل مجلس إدارة الهيئة. </td>
+                                            <td class="views-field views-field-field-page-number">
+                                                14 </td>
+                                            <td class="views-field views-field-created">
+                                                2017/07/05 </td>
+                                            <td class="views-field views-field-title">
+                                                <a href="/cms_v1/ar/node/252">عرض </a> </td>
+                                        </tr>
+                                        <tr class="even">
+                                            <td class="views-field views-field-counter">
+                                                4 </td>
+                                            <td class="views-field views-field-title">
+                                                اللجنة التنسيقية. </td>
+                                            <td class="views-field views-field-field-page-number">
+                                                7 </td>
+                                            <td class="views-field views-field-created">
+                                                2017/07/05 </td>
+                                            <td class="views-field views-field-title">
+                                                <a href="/cms_v1/ar/node/244">عرض </a> </td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td class="views-field views-field-counter">
+                                                5 </td>
+                                            <td class="views-field views-field-title">
+                                                اللجان المنبثقة عن مجلس إدارة الهيئة. </td>
+                                            <td class="views-field views-field-field-page-number">
+                                                12 </td>
+                                            <td class="views-field views-field-created">
+                                                2017/07/05 </td>
+                                            <td class="views-field views-field-title">
+                                                <a href="/cms_v1/ar/node/247">عرض </a> </td>
+                                        </tr>
+                                        <tr class="even views-row-last">
+                                            <td class="views-field views-field-counter">
+                                                6 </td>
+                                            <td class="views-field views-field-title">
+                                                اللائحة الإدارية. </td>
+                                            <td class="views-field views-field-field-page-number">
+                                                8 </td>
+                                            <td class="views-field views-field-created">
+                                                2017/07/05 </td>
+                                            <td class="views-field views-field-title">
+                                                <a href="/cms_v1/ar/node/253">عرض </a> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End it -->
+                            <div class="tab-pane fade" id="admin_affairs_p" role="tabpanel">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">اللائحة</th>
+                                            <th scope="col">عدد الصفحات</th>
+                                            <th scope="col">تاريخ النشر</th>
+                                            <th scope="col">التفاصيل</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Administrative affairs</td>
+                                            <td>3</td>
+                                            <td>2017/07/18</td>
+                                            <td>
+                                                <a data-toggle="modal" href="#myModal" target="_self">
                                              	 عرض
                                             </a>
-                                        </td>
-                                   	</tr>
-                                    <tr>
-                                     	<th scope="row">2</th>
-                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
+                                            <td>3</td>
+                                            <td>2017/07/18</td>
+                                            <td>
+                                                <a data-toggle="modal" href="#myModal" target="_self">
                                                  عرض
                                         	</a>
-                                        </td>
-                                    </tr>
-                            	</tbody>
-                        	</table>
-                    	</div><!-- End it -->
-                    	<div class="tab-pane fade" id="admin_affairs_p" role="tabpanel">
-                        	<table class="table table-hover">
-                            	<thead>
-                                 	<tr>
-                                       <th scope="col">#</th>
-                                       <th scope="col">اللائحة</th>
-                                       <th scope="col">عدد الصفحات</th>
-                                       <th scope="col">تاريخ النشر</th>
-                                       <th scope="col">التفاصيل</th>
-                                    </tr>
-                              	</thead>
-                                <tbody>
-                                	<tr>
-                                    	<th scope="row">1</th>
-                                        <td>Administrative affairs</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End Administrative affairs -->
+                            <div class="tab-pane fade" id="financial_affairs_p" role="tabpanel">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">اللائحة</th>
+                                            <th scope="col">عدد الصفحات</th>
+                                            <th scope="col">تاريخ النشر</th>
+                                            <th scope="col">التفاصيل</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Financial Affairs</td>
+                                            <td>3</td>
+                                            <td>2017/07/18</td>
+                                            <td>
+                                                <a data-toggle="modal" href="#myModal" target="_self">
                                              	 عرض
                                             </a>
-                                        </td>
-                                   	</tr>
-                                    <tr>
-                                     	<th scope="row">2</th>
-                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
+                                            <td>3</td>
+                                            <td>2017/07/18</td>
+                                            <td>
+                                                <a data-toggle="modal" href="#myModal" target="_self">
                                                  عرض
                                         	</a>
-                                        </td>
-                                    </tr>
-                            	</tbody>
-                        	</table>
-                    	</div><!-- End Administrative affairs -->
-                    	<div class="tab-pane fade" id="financial_affairs_p" role="tabpanel">
-                        	<table class="table table-hover">
-                            	<thead>
-                                 	<tr>
-                                       <th scope="col">#</th>
-                                       <th scope="col">اللائحة</th>
-                                       <th scope="col">عدد الصفحات</th>
-                                       <th scope="col">تاريخ النشر</th>
-                                       <th scope="col">التفاصيل</th>
-                                    </tr>
-                              	</thead>
-                                <tbody>
-                                	<tr>
-                                    	<th scope="row">1</th>
-                                        <td>Financial Affairs</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End financial_affairs -->
+                            <div class="tab-pane fade" id="general_regulations_p" role="tabpanel">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">اللائحة</th>
+                                            <th scope="col">عدد الصفحات</th>
+                                            <th scope="col">تاريخ النشر</th>
+                                            <th scope="col">التفاصيل</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>General Regulations</td>
+                                            <td>3</td>
+                                            <td>2017/07/18</td>
+                                            <td>
+                                                <a data-toggle="modal" href="#myModal" target="_self">
                                              	 عرض
                                             </a>
-                                        </td>
-                                   	</tr>
-                                    <tr>
-                                     	<th scope="row">2</th>
-                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
+                                            <td>3</td>
+                                            <td>2017/07/18</td>
+                                            <td>
+                                                <a data-toggle="modal" href="#myModal" target="_self">
                                                  عرض
                                         	</a>
-                                        </td>
-                                    </tr>
-                            	</tbody>
-                        	</table>
-                    	</div><!-- End financial_affairs -->
-                    	<div class="tab-pane fade" id="general_regulations_p" role="tabpanel">
-                        	<table class="table table-hover">
-                            	<thead>
-                                 	<tr>
-                                       <th scope="col">#</th>
-                                       <th scope="col">اللائحة</th>
-                                       <th scope="col">عدد الصفحات</th>
-                                       <th scope="col">تاريخ النشر</th>
-                                       <th scope="col">التفاصيل</th>
-                                    </tr>
-                              	</thead>
-                                <tbody>
-                                	<tr>
-                                    	<th scope="row">1</th>
-                                        <td>General Regulations</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
-                                             	 عرض
-                                            </a>
-                                        </td>
-                                   	</tr>
-                                    <tr>
-                                     	<th scope="row">2</th>
-                                        <td>مدونة قواعد السلوك الوظيفي وأخلاقيات الوظيفة العامة</td>
-                                        <td>3</td>
-                                        <td>2017/07/18</td>
-                                        <td>
-                                        	<a data-toggle="modal" href="#myModal" target="_self">
-                                                 عرض
-                                        	</a>
-                                        </td>
-                                    </tr>
-                            	</tbody>
-                        	</table>
-                    	</div><!-- End financial_affairs -->
-                   	</div><!-- End tap content -->
-                </div> <!-- End col for col of contnet taps -->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End financial_affairs -->
+                        </div>
+                        <!-- End tap content -->
+                    </div>
+                    <!-- End col for col of contnet taps -->
+                </div>
             </div>
-        </div> <!-- End Policies -->
-      </div> <!-- End tap content tag for all taps -->
-     </div> <!-- End Col-12 General -->
+            <!-- End Policies -->
+        </div>
+        <!-- End tap content tag for all taps -->
+    </div>
+    <!-- End Col-12 General -->
 </div>
 
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal">
-	<div class="modal-dialog modal-dialog-centered modal-lg">
-		<div class="modal-content">
-		<!-- Modal Header -->
-			<div class="modal-header">
-            	<h4 class="modal-title">قواعد تنظيم قبول المسؤولين في الجهات الحكومية للهـداي</h4>
-            	<button type="button" class="close" data-dismiss="modal">&times;</button>
-			</div>
-		<!-- Modal body -->
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">قواعد تنظيم قبول المسؤولين في الجهات الحكومية للهـداي</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
             <div class="modal-body">
-            	<p>
-                 	 تشمل هذه اللائحة 5 مواد تنظم عملية قبول الهدايا للمسؤولين في الجهات الحكومية أثناء الزيارات والمناسبات الرسمية، من خلال تحدد معايير وضوابط قبول الهدايا، وطبيعتها وقيمتها وكيفية التعامل معها بطريقة نظامية بشكل عام. 
-            	</p>
-                <embed src="org.pdf" style="width: 100%; height: 700px;"  type='application/pdf'>
-			</div>
-                                                                
-        <!-- Modal footer -->
-        	<div class="modal-footer">
-            	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>                                                
-		</div>
-	</div>
+                <p>
+                    تشمل هذه اللائحة 5 مواد تنظم عملية قبول الهدايا للمسؤولين في الجهات الحكومية أثناء الزيارات والمناسبات الرسمية، من خلال تحدد معايير وضوابط قبول الهدايا، وطبيعتها وقيمتها وكيفية التعامل معها بطريقة نظامية بشكل عام.
+                </p>
+                <embed src="org.pdf" style="width: 100%; height: 700px;" type='application/pdf'>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 </div>
