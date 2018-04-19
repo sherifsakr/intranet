@@ -79,11 +79,11 @@ body {
   content: "";
   display: block;
   position: absolute;
-  height: 600px;
-  width: 0px;
+  height: 100%;
+  width: 50%;
   border-left: 2px solid orange;
   margin-left: 49%;
-  top: 15px;
+  top: 23px;
 }
 .org-chart ul.columnOne {
   height: 90px;
