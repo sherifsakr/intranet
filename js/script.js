@@ -10,7 +10,8 @@ app.config(function($routeProvider) {
             controller: 'boardManag'
         })
         .when("/orgChart", {
-            templateUrl: "pages/orgChart.html"
+            templateUrl: "pages/orgChart.html",
+            controller:"orgChartCtrl"
         })
         .when("/missionAndVision", {
             templateUrl: "pages/missionAndVision.html",
@@ -107,9 +108,7 @@ app.controller("mainCtrl", function($scope) {
 });
 
 
-app.controller('orgChartctrl', function($scope) {
 
-});
 app.controller('missionAndVisionCtrl', function($scope) {
     $scope.$on('$viewContentLoaded', function(event) {
         //Your code goes here.
@@ -197,6 +196,30 @@ app.controller('regulationsPolicies', function($scope) {
     });
 });
 
+app.controller('orgChartCtrl',function($scope){
+    
+    $(document).ready(function() {
+    $("#tree-data").jOrgChart({
+        chartElement: $("#tree-view")
+      });
+      
+      $("#tree-data").jOrgChart({
+      
+      // target element
+      chartElement : 'body',
+      
+      // depth
+      depth      : -1,
+      
+      // CSS selector
+      chartClass : "jOrgChart",
+      
+      // fired on clicked
+      nodeClicked: function ($node, type) {}
+      
+      });
+    });
+});
 app.controller('newsCtrl', function($scope) {
     //tabs for sub news 
     $scope.tab = 1;

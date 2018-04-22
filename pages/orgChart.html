@@ -1,272 +1,204 @@
-﻿<!DOCTYPE html>
-<html lang="en" >
+﻿
 
-<head>
-  <meta charset="UTF-8">
-  <title>Responsive Organization Chart [updated]</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+<link href="css/orgchart.css" rel="stylesheet">
 
+<style>
 
-  
-  
-      <link rel="stylesheet" href="css/org-chart.css">
+	.green{ background-color: rgb(159, 209, 138) !important ; }
+	.blue{ background-color: #b8dcf5  !important ; }
+	.gray{ background-color: #f0f0f0 !important ;}
+</style>
+   <section class="row  ">
+<ul id="tree-data" style="display:none; ">
+	<li id="root">
+	 مجلس إدارةالهيئة العامة للإحصاء
+	<ul>
+	 <li id="root">
+	الرئيس
+		
+	 <ul>
+		<li id="node1" class="gray">
+		 المراجعة الداخلية
+		</li>         
+		<li id="node22" class="green">
+			نائب الرئيس للأعمال الإحصائية
+			<ul >
+					<li id="node22.1" style="background: #ffce94;">وكيل العمليات والمنهجيات 
+							<ul type="vertical">
+									<li style="background-color: #b8dcf5;">الأدارة العاملة للمنهجيات والتنسيق الإحصائى
+											<ul type="vertical">
+													<li id="node22.1.1">إدارة العينات </li>
+													<li id="node22.1.2">إدارة دعم المنهجية الإحصائية</li>
+													<li id="node22.1.3">إدارة التنسيق الإحصائى </li>
+													<li id="node22.1.4">إدارة التصنيفات والمعاير الإحصائية</li>
+												
+												</ul>
+									</li>
+									<li style="background-color: #b8dcf5;">الإدارة العامة للعمليات
+											<ul type="vertical">
+													<li>إدارة تنسيق العمل الميدانى</li>
+													<li>إدارة دعم العمليات</li>
+													<li>إدارة التعداد </li>
+												</ul>
+									</li>
+									<li style="background-color: #b8dcf5;">الإدارة العامة للفروع </li>
+								</ul>
 
-  
+					</li>
+					<li style="background: #ffce94;">وكيل الخدمات الإحصائية
 
- 
-  
-      <figure class="org-chart cf">
+							<ul type="vertical">
+									<li style="background-color: #b8dcf5;">الإدارةالعامة للإحصاءات الإجتماعية
+											<ul type="vertical">
+													<li>إدارة إحصاءات التعليم </li>
+													<li>إدارة الإحصاءات السكانية والحيوية</li>
+													<li>إدارة إحصاءات الخدمات الحكوميةوالإحصاءات الجغرافية</li>
+													<li> إدارة إحصاءات القوى العاملة والأحوال المدنية </li>
+												
+												</ul>
+									</li>
+									<li style="background-color: #b8dcf5;">الإدارة العاملة للإحصاءات الإقتصادية
+											<ul type="vertical">
+													<li>إدارة إحصاءات الحسابات القومية </li>
+													<li>إدارة إحصاءات التجارة الخارجية</li>
+													<li>إدارة إحصاءات الصناعة والأعمال </li>
+													<li>إدارة إحصاءات الأسعار </li>
+												
+												</ul>
+									</li>
+									<li class="last" style="background-color: #b8dcf5;">الإدارة العامة لإحصاءات المعرفة والموارد الطبيعية
+											<ul type="vertical">
+													<li>إدارة إحصاءات الطاقة </li>
+													<li>إدارة إحصاءات الزراعة</li>
+													<li>إدارة إحصاءات البنية </li>
+													<li>إدارة إحصاءات المعرفة </li>
+												
+												</ul>
+									</li>
+									
+								
+								</ul>
+					</li>
+				
+	
+				
+				</ul>
+	</li>   
 
-          <div class="board ">
-              <ul class="columnOne">
-                  <li>
-                      <span>
-                          <strong>Position Name</strong>
-                          <br>Name Surname
-                          <br>AA
-                      </span>
-                  </li>
+	<li id="node23" class="green">
+			نائب الرئيس لخدمات العملاء والإبتكار الإحصائى
+	<ul type="vertical">
+			<li id="node23.1" class="blue" style="background-color: #b8dcf5;">الإدارة العامة للعلاقات ودعم العملاء</li>
+			<li id="node23.2" style="background-color: #b8dcf5;">الإدارة العامة للتحليل الإحصائى </li>
+			<li id="node23.3" style="background-color: #b8dcf5;">الإدارة العامة للتقارير العامة </li>
+			<li id="node23.4" style="background-color: #b8dcf5;">الإدارة العامة للإبتكار والتطوير الإحصائى</li>
+			<li id="node23.5" style="background-color: #b8dcf5;">الإدارة العامة للعلاقات والتعاون الدولى </li>
+			<li node="node23.6" style="background-color: #b8dcf5;" >أكادمية الإحصاء </li>
+		
+	</ul>
+	</li> 
+	<li id="node23" class="green">
+	 نائب الرئيس لتقنية المعلومات والخدمات المساندة
+	 <ul type="vertical">
+			<li style="background-color: #b8dcf5;">الإدارة العامة للموارد البشرية
+					<ul type="vertical">
+							<li>إدارة إستراتيجية الموارد البشرية</li>
+							<li>إدارة تطوير الموارد البشرية </li>
+							<li>إدارة عمليات الموارد البشرية </li>
+						
+					</ul>
+			</li>
+			<li id="nod233" style="background: #ffce94;">وكيل تقنية المعلومات 
+					<ul type="vertical">
+							<li style="background-color: #b8dcf5;">الإدارة العامة للبنية التحتية لتقنية المعلومات
+									<ul type="">
+											<li>إدارة الشبكات والإتصالات</li>
+											<li>إدارة دعم قواعد البيانات </li>
+											<li>إدارة النظم والمعلومات </li>
+											<li>إدارة أمن المعلومات</li>
+										
 
+										
+									</ul>
+							</li>
+							<li class="last" style="background-color: #b8dcf5;">الإدارة العامة لتطوير تقنية المعلومات والخدمات الإلكترونية
+									<ul type="">
+											<li>إدارة تطوير التطبيقات</li>
+											<li>إدارة الخدمات الإلكترونية إدارة البيانات </li>
+											<li>إدارة الدعم الفنى</li>
+											<li>إدارة الجودة </li>
 
-              </ul>
-              <ul class="columnOne">
-                  <li>
-                      <span class="lvl-b">
-                          <strong>Position Name</strong>
-                          <br>Name Surname
-                          <br>AA
-                      </span>
-                  </li>
-              </ul>
+										
+									</ul>	
+							</li>
+		
+						
+						
+					</ul>
 
-          </div>
+			</li>
+			<li id="node203" class="last" style="background: #ffce94;">وكيل الشؤن الإدارية والمالية
+					<ul type="vertical">
+						
+							<li >إدارة المرافق والخدمات الإدارية</li>
+							<li >إدارة التوثيق والأرشفة </li>
+							<li style="background-color: #b8dcf5;">الإدارة العامة للشؤن المالية
+									<ul type="vertical">
+											<li>إدارة الميزانية والمحاسبة</li>
+											<li  class="">إدارة المشتريات</li>
+									</ul>
+							</li>
+						</ul>
+					
+			</li>
+		   
+	</ul>
+	</li> 
 
-          <ul class="departments ">
-              <li class="department ">
-                  <span class="lvl-b">
-                      <strong>Position Name</strong>
-                      <br>Name Surname
-                      <br>AB
-                  </span>
+		<li id="node21" class="blue" style="background-color: #b8dcf5;">
+		  الإدارة العامة للدعم والتميز المؤسسى
+		 
+				<ul type="vertical">
+						<li>إدارة التميز المؤسسى</li>
+						<li  class="">إدارة أدارة الشاملة</li>
+						<li  class="">أدارة المعرفه</li>
+				</ul>
+		
+		</li>         
+		<li id="node28" class=" blue">
+		 الإدارة العامة للمشاريع والتخطيط الإستراتيجى
+		 <ul type="vertical">
+				<li>مكتب إدارة المشاريع </li>
+				<li>مكتب التحول والأدار المؤسسى</li>
+				<li>إدارة التخطيط الإستراتيجى </li>
+				<li>إدارة التغير</li>
+			
+			</ul>
+		</li>
+		<li id="node37" class="last blue" style="background-color: #b8dcf5;">
+			الإدارة العامة للإعلام والوعى الإحصائى
+			<ul type="vertical">
+					<li id="node37.1" class="gray">إدارة الإعلام الجديد </li>
+					<li class="gray">إدارة التوعية الإحصائية</li>
+					<li class="gray">إدارة الإتصال الإعلامى </li>
+					<li class="gray">إدارة التواصل الداخلى</li>
+					<li class="gray">إدارة الإنتاج </li>
+				</ul>
+			</li>
+			<li id="node38" class="last blue">
+					مكتب الرئيس
 
-              </li>
-              <li class="department ">
-                  <span class="lvl-b">
-                      <strong>Position Name</strong>
-                      <br>Name Surname
-                      <br>AB
-                  </span>
-
-              </li>
-              <li class="department ">
-                  <span class="lvl-b">
-                      <strong>Position Name</strong>
-                      <br>Name Surname
-                      <br>AB
-                  </span>
-
-
-              </li>
-              <li class="department central">
-                  <span class="lvl-b">
-                      <strong>Position Name</strong>
-                      <br>Name Surname
-                      <br>AB
-                  </span>
-                  <ul class="sections">
-                      <li class="section">
-                          <span>
-                              <strong>Position Name</strong>
-                              <br>Name Surname
-                              <br>AA
-                          </span>
-                      </li>
-                      <li class="section">
-                          <span>
-                              <strong>Position Name</strong>
-                              <br>Name Surname
-                              <br>CC
-                          </span>
-                      </li>
-                      <li class="section">
-                          <span>
-                              <strong>Position Name</strong>
-                              <br>Name Surname
-                              <br>CC
-                          </span>
-                      </li>
-
-                  </ul>
-              </li>
-              <li class="department ">
-                  <span class="lvl-b">
-                      <strong>Position Name</strong>
-                      <br>Name Surname
-                      <br>AB
-                  </span>
-                  <ul class="sections">
-                      <li class="section">
-                          <span>
-                              <strong>Position Name</strong>
-                              <br>Name Surname
-                              <br>AA
-                          </span>
-                      </li>
-                      <li class="section">
-                          <span>
-                              <strong>Position Name</strong>
-                              <br>Name Surname
-                              <br>BB
-                          </span>
-                      </li>
-                      <li class="section">
-                          <span>
-                              <strong>Position Name</strong>
-                              <br>Name Surname
-                              <br>AA
-                          </span>
-                      </li>
-                      <li class="section">
-                          <span>
-                              <strong>Position Name</strong>
-                              <br>Name Surname
-                              <br>BB
-                          </span>
-                      </li>
-                  </ul>
-              </li>
-              <li class="department ">
-                  <span class="lvl-b">
-                      <strong>Position Name</strong>
-                      <br>Name Surname
-                      <br>AB
-                  </span>
-                  <ul class="sections">
-                      <li class="section">
-                          <span>
-                              <strong>Position Name</strong>
-                              <br>Name Surname
-                              <br>CC
-                          </span>
-                      </li>
-                      <li class="section">
-                          <span>
-                              <strong>Position Name</strong>
-                              <br>Name Surname
-                              <br>AA
-                          </span>
-                      </li>
-                      <li class="section">
-                          <span>
-                              <strong>Position Name</strong>
-                              <br>Name Surname
-                              <br>CC
-                          </span>
-                      </li>
-                      <li class="section">
-                          <span>
-                              <strong>Position Name</strong>
-                              <br>Name Surname
-                              <br>CC
-                          </span>
-                      </li>
-                      <li class="section">
-                          <span>
-                              <strong>Position Name</strong>
-                              <br>Name Surname
-                              <br>CC
-                          </span>
-                      </li>
-                  </ul>
-              </li>
-              <li class="department ">
-                  <span class="lvl-b">
-                      <strong>Position Name</strong>
-                      <br>Name Surname
-                      <br>AB
-                  </span>
-                  <ul class="sections">
-                      <li class="section">
-                          <span>
-                              <strong>Position Name</strong>
-                              <br>Name Surname
-                              <br>AA
-                          </span>
-                      </li>
-                      <li class="section">
-                          <span>
-                              <strong>Position Name</strong>
-                              <br>Name Surname
-                              <br>BB
-                          </span>
-                      </li>
-                  </ul>
-              </li>
-          </ul>
+					<ul type="vertical">
+						<li>مكتب شؤن الرئيس </li>
+						<li>المكتب الإستشارى</li>
+					</ul>
+					</li>
+	  </ul>
 
 
-
-          <div class="board ">
-              <ul class="columnOne">
-                  <li>
-                      <span>
-                          <strong>Position Name</strong>
-                          <br>Name Surname
-                          <br>AA
-                      </span>
-                  </li>
-
-
-              </ul>
-              <ul class="columnOne">
-                  <li>
-                      <span class="lvl-b">
-                          <strong>Position Name</strong>
-                          <br>Name Surname
-                          <br>AA
-                      </span>
-                  </li>
-              </ul>
-
-          </div>
-
-          <ul class="departments ">
-              <li class="department ">
-                  <span class="lvl-b">
-                      <strong>Position Name</strong>
-                      <br>Name Surname
-                      <br>AB
-                  </span>
-
-              </li>
-              <li class="department ">
-                  <span class="lvl-b">
-                      <strong>Position Name</strong>
-                      <br>Name Surname
-                      <br>AB
-                  </span>
-
-              </li>
-              <li class="department ">
-                  <span class="lvl-b">
-                      <strong>Position Name</strong>
-                      <br>Name Surname
-                      <br>AB
-                  </span>
-
-
-</li>
-           
-          </ul>
-
-
-      </figure>
- 
- 
-  
-
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-  
-
-
+	</li>
+	
+  </ul>
+</ul>
+  <!-- <div id="tree-view"></div>   -->
+</section>
