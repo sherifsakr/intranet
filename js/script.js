@@ -197,27 +197,11 @@ app.controller('regulationsPolicies', function($scope) {
 });
 
 app.controller('orgChartCtrl',function($scope){
-    
-    $(document).ready(function() {
-    $("#tree-data").jOrgChart({
-        chartElement: $("#tree-view")
-      });
-      
-      $("#tree-data").jOrgChart({
-      
-      // target element
-      chartElement : 'body',
-      
-      // depth
-      depth      : -1,
-      
-      // CSS selector
-      chartClass : "jOrgChart",
-      
-      // fired on clicked
-      nodeClicked: function ($node, type) {}
-      
-      });
+	$scope.$on('$viewContentLoaded', function(event) {
+        //Your code goes here.
+        $(".main-container").removeClass("container");
+        $(".main-container").addClass("container-fluid");
+
     });
 });
 app.controller('newsCtrl', function($scope) {
