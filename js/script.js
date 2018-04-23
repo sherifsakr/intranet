@@ -7,7 +7,6 @@ app.config(function($routeProvider) {
         })
         .when("/boardManag", {
             templateUrl: "pages/boardManag.html",
-            controller: 'boardManag'
         })
         .when("/orgChart", {
             templateUrl: "pages/orgChart.html",
@@ -200,6 +199,7 @@ app.controller('orgChartCtrl',function($scope){
 	$scope.$on('$viewContentLoaded', function(event) {
         //Your code goes here.
 		$(".panel-title a").attr("target","_self");
+		$("._clicked").trigger('click');
 
     });
 });
