@@ -1,6 +1,820 @@
-<div class="row">
-	<div class="col-12">
-		<iframe  src="images/Org_Chart (4) (6).SVG" style="width: 100%; height:1883.086px; border: none;">
-		</iframe>
-	</div>
+<style>
+    .panel-group .panel-heading+.panel-collapse>.panel-body {
+        border: 1px solid #ddd !important;
+    }
+    
+    .panel-group,
+    .panel-group .panel,
+    .panel-group .panel-heading,
+    .panel-group .panel-heading a,
+    .panel-group .panel-title,
+    .panel-group .panel-title a,
+    .panel-group .panel-body,
+    .panel-group .panel-group .panel-heading+.panel-collapse>.panel-body {
+        border-radius: 2px;
+        border: 0;
+    }
+    
+    .panel-group .panel-heading {
+        padding: 0;
+    }
+    
+    .panel-group .panel-heading a {
+        display: block;
+        background: #668bb1 !important;
+        color: #ffffff !important;
+        padding: 15px;
+        text-decoration: none;
+        position: relative;
+        padding-right: 35px;
+    }
+    
+    .panel-group .panel-heading a.collapsed {
+        background: #eeeeee !important;
+        color: inherit !important;
+        padding-right: 40px;
+    }
+    
+    .panel-group .panel-heading a:after {
+        content: '-';
+        position: absolute;
+        right: 20px;
+        top: 7px;
+        font-size: 30px;
+    }
+    
+    .panel-group .panel-heading a.collapsed:after {
+        top: 7px;
+        content: '+';
+    }
+    
+    .panel-group .panel-collapse {
+        margin-top: 5px !important;
+    }
+    
+    .panel-group .panel-body {
+        background: #ffffff !important;
+        padding: 15px;
+    }
+    
+    .panel-group .panel {
+        background-color: transparent !important;
+    }
+    
+    .panel-group .panel-body p:last-child,
+    .panel-group .panel-body ul:last-child,
+    .panel-group .panel-body ol:last-child {
+        margin-bottom: 0;
+    }
+</style>
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#boardManag">
+				مجلس إدارة الهيئة العامة للإحصاء
+				</a>
+            </h4>
+        </div>
+        <!--/.panel-heading -->
+        <div id="boardManag" class="panel-collapse collapse">
+            <div class="panel-body">
+                <!-- nested -->
+                <div class="panel-group" id="nested">
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#nested" href="#president">
+									الرئيس
+                                </a>
+                            </h4>
+                        </div>
+                        <!--/.panel-heading -->
+                        <div id="president" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <!--STart-->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#nested" href="#president_office">
+												مكتب الرئيس
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <!--/.panel-heading -->
+                                    <div id="president_office" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <!--STart-->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															مكتب شؤون الرئيس
+                                            			</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <!-- /.panel -->
+                                            <!--STart-->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															المكتب الإستشاري
+                                            			</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <!-- /.panel -->
+                                        </div>
+                                        <!--/.panel-body -->
+                                    </div>
+                                    <!--/.panel-collapse -->
+                                </div>
+                                <!-- /.panel -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#nested" href="#GDMSA">
+												الإدارة العامة للإعلام والوعي الإحصائي
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <!--/.panel-heading -->
+                                    <div id="GDMSA" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <!--STart-->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															إدارة الإعلام الجديد
+                                            			</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <!--STart-->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															إدارة التوعية الإحصائية
+                                            			</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <!--STart-->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															إدارة الإتصال الإعلامي
+                                            			</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <!--STart-->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															إدارة التواصل الداخلي
+                                            			</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <!--STart-->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															إدارة الإنتاج
+                                            			</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                        </div>
+                                        <!--/.panel-body -->
+                                    </div>
+                                    <!--/.panel-collapse -->
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#nested" href="#GDPSP">
+												الإدارة العامة للمشاريع والتخطيط الإستراتيجي
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <!--/.panel-heading -->
+                                    <div id="GDPSP" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <!--STart-->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															مكتب إدارة المشاريع                                          
+														</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <!--STart-->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															مكتب التحول والأداء المؤسسي                                            			
+														</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <!--STart-->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															إدارة التخطيط الإستراتيجي
+                                            			</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <!--STart-->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															إدارة التغيير
+                                            			</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                        </div>
+                                        <!--/.panel-body -->
+                                    </div>
+                                    <!--/.panel-collapse -->
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#nested" href="#GDISE">
+												الإدارة العامة للدعم والتميز المؤسسي
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <!--/.panel-heading -->
+                                    <div id="GDISE" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <!--STart-->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															إدارة التميز المؤسسي
+                                            			</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <!--STart-->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															إدارة الجودة الشاملة
+                                            			</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <!--STart-->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															إدارة المعرفة
+                                            			</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                        </div>
+                                        <!--/.panel-body -->
+                                    </div>
+                                    <!--/.panel-collapse -->
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#nested" href="#VPIT">
+												نائب الرئيس لتقنية المعلومات والخدمات المساندة
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <!--/.panel-heading -->
+                                    <div id="VPIT" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <!--STart-->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															مكتب نائب الرئيس
+                                            			</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <!--STart-->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															الإدارة القانونية
+                                            			</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested" href="#AAA">
+															وكيل الشؤون الإدارية والمالية
+														</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+                                                <div id="AAA" class="panel-collapse collapse in">
+                                                    <div class="panel-body">
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#nested" href="#GDFA">
+																		الإدارة العامة للشؤون المالية
+																	</a>
+                                                                </h4>
+                                                            </div>
+                                                            <!--/.panel-heading -->
+                                                            <div id="GDFA" class="panel-collapse collapse in">
+                                                                <div class="panel-body">
+                                                                    <div class="panel panel-default">
+                                                                        <div class="panel-heading">
+                                                                            <h4 class="panel-title">
+                                                                                <a data-toggle="collapse" data-parent="#nested">
+																					إدارة الميزانية والمحاسبة
+																				</a>
+                                                                            </h4>
+                                                                        </div>
+                                                                        <!--/.panel-heading -->
+
+                                                                        <!--/.panel-collapse -->
+                                                                    </div>
+                                                                    <div class="panel panel-default">
+                                                                        <div class="panel-heading">
+                                                                            <h4 class="panel-title">
+                                                                                <a data-toggle="collapse" data-parent="#nested">
+																					إدارة المشتريات
+																				</a>
+                                                                            </h4>
+                                                                        </div>
+                                                                        <!--/.panel-heading -->
+
+                                                                        <!--/.panel-collapse -->
+                                                                    </div>
+                                                                </div>
+                                                                <!--/.panel-body -->
+                                                            </div>
+                                                            <!--/.panel-collapse -->
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#nested">
+																		إدارة المرافق والخدمات الإدارية
+																	</a>
+                                                                </h4>
+                                                            </div>
+                                                            <!--/.panel-heading -->
+
+                                                            <!--/.panel-collapse -->
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#nested">
+																		إدارة التوثيق والأرشفة
+																	</a>
+                                                                </h4>
+                                                            </div>
+                                                            <!--/.panel-heading -->
+
+                                                            <!--/.panel-collapse -->
+                                                        </div>
+                                                    </div>
+                                                    <!--/.panel-body -->
+                                                </div>
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested" href="#AIT">
+															وكيل تقنية المعلومات
+														</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+                                                <div id="AIT" class="panel-collapse collapse in">
+                                                    <div class="panel-body">
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#nested" href="#GDITS">
+																		الإدارة العامة للبنية التحتية لتقنية المعلومات
+																	</a>
+                                                                </h4>
+                                                            </div>
+                                                            <!--/.panel-heading -->
+                                                            <div id="GDITS" class="panel-collapse collapse in">
+                                                                <div class="panel-body">
+                                                                    <div class="panel panel-default">
+                                                                        <div class="panel-heading">
+                                                                            <h4 class="panel-title">
+                                                                                <a data-toggle="collapse" data-parent="#nested">
+																					إدارة الشبكات والإتصالات
+																				</a>
+                                                                            </h4>
+                                                                        </div>
+                                                                        <!--/.panel-heading -->
+
+                                                                        <!--/.panel-collapse -->
+                                                                    </div>
+                                                                    <div class="panel panel-default">
+                                                                        <div class="panel-heading">
+                                                                            <h4 class="panel-title">
+                                                                                <a data-toggle="collapse" data-parent="#nested">
+																					إدارة دعم قواعد البيانات
+																				</a>
+                                                                            </h4>
+                                                                        </div>
+                                                                        <!--/.panel-heading -->
+
+                                                                        <!--/.panel-collapse -->
+                                                                    </div>
+                                                                    <div class="panel panel-default">
+                                                                        <div class="panel-heading">
+                                                                            <h4 class="panel-title">
+                                                                                <a data-toggle="collapse" data-parent="#nested">
+																					إدارة النظم والعمليات
+																				</a>
+                                                                            </h4>
+                                                                        </div>
+                                                                        <!--/.panel-heading -->
+
+                                                                        <!--/.panel-collapse -->
+                                                                    </div>
+                                                                    <div class="panel panel-default">
+                                                                        <div class="panel-heading">
+                                                                            <h4 class="panel-title">
+                                                                                <a data-toggle="collapse" data-parent="#nested">
+																					إدارة أمن المعلومات
+																				</a>
+                                                                            </h4>
+                                                                        </div>
+                                                                        <!--/.panel-heading -->
+
+                                                                        <!--/.panel-collapse -->
+                                                                    </div>
+                                                                </div>
+                                                                <!--/.panel-body -->
+                                                            </div>
+                                                            <!--/.panel-collapse -->
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#nested" href="#GDITD">
+																		الإدارة العامة لتطوير تقنية المعلومات والخدمات الإلكترونية
+																	</a>
+                                                                </h4>
+                                                            </div>
+                                                            <!--/.panel-heading -->
+                                                            <div id="GDITD" class="panel-collapse collapse in">
+                                                                <div class="panel-body">
+                                                                    <div class="panel panel-default">
+                                                                        <div class="panel-heading">
+                                                                            <h4 class="panel-title">
+                                                                                <a data-toggle="collapse" data-parent="#nested">
+																					إدارة تطوير التطبيقات
+																				</a>
+                                                                            </h4>
+                                                                        </div>
+                                                                        <!--/.panel-heading -->
+
+                                                                        <!--/.panel-collapse -->
+                                                                    </div>
+                                                                    <div class="panel panel-default">
+                                                                        <div class="panel-heading">
+                                                                            <h4 class="panel-title">
+                                                                                <a data-toggle="collapse" data-parent="#nested">
+																					إدارة الخدمات الإلكترونية وإدارة البيانات
+																				</a>
+                                                                            </h4>
+                                                                        </div>
+                                                                        <!--/.panel-heading -->
+
+                                                                        <!--/.panel-collapse -->
+                                                                    </div>
+                                                                </div>
+                                                                <!--/.panel-body -->
+                                                            </div>
+                                                            <!--/.panel-collapse -->
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#nested">
+																		إدارة الدعم الفني
+																	</a>
+                                                                </h4>
+                                                            </div>
+                                                            <!--/.panel-heading -->
+
+                                                            <!--/.panel-collapse -->
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#nested">
+																		إدارة ضمان الجودة
+																	</a>
+                                                                </h4>
+                                                            </div>
+                                                            <!--/.panel-heading -->
+
+                                                            <!--/.panel-collapse -->
+                                                        </div>
+                                                    </div>
+                                                    <!--/.panel-body -->
+                                                </div>
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested" href="#GDHR">
+															الإدارة العامة للموارد البشرية
+														</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+                                                <div id="GDHR" class="panel-collapse collapse in">
+                                                    <div class="panel-body">
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#nested">
+																		إدارة استراتيجية الموارد البشرية
+																	</a>
+                                                                </h4>
+                                                            </div>
+                                                            <!--/.panel-heading -->
+
+                                                            <!--/.panel-collapse -->
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#nested">
+																		إدارة تطوير الموارد البشرية
+																	</a>
+                                                                </h4>
+                                                            </div>
+                                                            <!--/.panel-heading -->
+
+                                                            <!--/.panel-collapse -->
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#nested">
+																		إدارة عمليات الموارد البشرية
+																	</a>
+                                                                </h4>
+                                                            </div>
+                                                            <!--/.panel-heading -->
+
+                                                            <!--/.panel-collapse -->
+                                                        </div>
+                                                    </div>
+                                                    <!--/.panel-body -->
+                                                </div>
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                        </div>
+                                        <!--/.panel-body -->
+                                    </div>
+                                    <!--/.panel-collapse -->
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#nested" href="#VPCS">
+												نائب الرئيس لخدمة العملاء والإبتكار الإحصائي
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <!--/.panel-heading -->
+                                    <div id="VPCS" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															مكتب نائب الرئيس
+														</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															الإدارة العامة للعلاقات ودعم العملاء
+														</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															الإدارة العامة للتحليل الإحصائي
+														</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															الإدارة العامة للتقارير العامة
+														</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															الإدارة العامة للإبتكار والتطوير الإحصائي
+														</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															الإدارة العامة للعلاقات والتعاون الدولي
+														</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#nested">
+															أكاديمية الإحصاء
+														</a>
+                                                    </h4>
+                                                </div>
+                                                <!--/.panel-heading -->
+
+                                                <!--/.panel-collapse -->
+                                            </div>
+                                        </div>
+                                        <!--/.panel-body -->
+                                    </div>
+                                    <!--/.panel-collapse -->
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#nested" href="#VPSW">
+												نائب الرئيس للأعمال الإحصائية
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <!--/.panel-heading -->
+                                    <div id="VPSW" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+
+                                        </div>
+                                        <!--/.panel-body -->
+                                    </div>
+                                    <!--/.panel-collapse -->
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#nested">
+												الأمانة العامة لمجلس الإدارة
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <!--/.panel-heading -->
+
+                                    <!--/.panel-collapse -->
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#nested">
+												المراجعة الداخلية
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <!--/.panel-heading -->
+                                    <!--/.panel-collapse -->
+                                </div>
+                            </div>
+                            <!--/.panel-body -->
+                        </div>
+                        <!--/.panel-collapse -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.panel-group -->
+                <!-- nested -->
+            </div>
+            <!--/.panel-body -->
+        </div>
+        <!--/.panel-collapse -->
+    </div>
+    <!-- /.panel -->
 </div>
+<!-- /.panel-group -->

@@ -199,8 +199,7 @@ app.controller('regulationsPolicies', function($scope) {
 app.controller('orgChartCtrl',function($scope){
 	$scope.$on('$viewContentLoaded', function(event) {
         //Your code goes here.
-        $(".main-container").removeClass("container");
-        $(".main-container").addClass("container-fluid");
+		$(".panel-title a").attr("target","_self");
 
     });
 });
