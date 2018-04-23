@@ -59,7 +59,10 @@ app.config(function($routeProvider) {
             templateUrl: "pages/digitalLib.html",
             controller: "digital-library"
         })
+
+        
 });
+
 
 
 app.controller("mainCtrl", function($scope) {
@@ -160,6 +163,7 @@ app.controller('media', function($scope) {
         });
     });
 });
+
 
 app.controller('profile', function($scope) {
     $scope.$on('$viewContentLoaded', function(event) {

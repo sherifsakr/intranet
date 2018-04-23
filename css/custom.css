@@ -231,3 +231,7 @@ cursor: pointer;
 .news-sub li.active a{
 background-color: #36a9e1;
     color: #fff !important;}
+    
+ .google-in:hover {
+	box-shadow: 0 0px 5px;
+}
