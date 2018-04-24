@@ -7,10 +7,11 @@ app.config(function($routeProvider) {
         })
         .when("/boardManag", {
             templateUrl: "pages/boardManag.html",
+            
         })
         .when("/orgChart", {
             templateUrl: "pages/orgChart.html",
-            controller:"orgChartCtrl"
+            controller: "orgChartCtrl"
         })
         .when("/missionAndVision", {
             templateUrl: "pages/missionAndVision.html",
@@ -58,9 +59,10 @@ app.config(function($routeProvider) {
         .when("/digital-library", {
             templateUrl: "pages/digitalLib.html",
             controller: "digital-library"
+            	
         })
 
-        
+
 });
 
 
@@ -115,6 +117,7 @@ app.controller('missionAndVisionCtrl', function($scope) {
     $scope.$on('$viewContentLoaded', function(event) {
         //Your code goes here.
         $('.card').css('display', 'none');
+        $('.notifications div').css('display', 'block');
 
         $('#v').slideDown(500, function() {
             $('#m').slideDown(500, function() {
@@ -175,6 +178,13 @@ app.controller('profile', function($scope) {
     });
 });
 
+app.controller('boardManag', function($scope) {
+    $scope.$on('$viewContentLoaded', function(event) {
+        //Your code goes here.
+    	
+    });
+});
+
 app.controller('digital-library', function($scope) {
     $scope.$on('$viewContentLoaded', function(event) {
         //Your code goes here.
@@ -199,11 +209,11 @@ app.controller('regulationsPolicies', function($scope) {
     });
 });
 
-app.controller('orgChartCtrl',function($scope){
-	$scope.$on('$viewContentLoaded', function(event) {
+app.controller('orgChartCtrl', function($scope) {
+    $scope.$on('$viewContentLoaded', function(event) {
         //Your code goes here.
-		$(".panel-title a").attr("target","_self");
-		$("._clicked").trigger('click');
+        $(".panel-title a").attr("target", "_self");
+        $("._clicked").trigger('click');
 
     });
 });
