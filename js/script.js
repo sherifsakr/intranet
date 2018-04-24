@@ -7,7 +7,6 @@ app.config(function($routeProvider) {
         })
         .when("/boardManag", {
             templateUrl: "pages/boardManag.html",
-            
         })
         .when("/orgChart", {
             templateUrl: "pages/orgChart.html",
@@ -131,6 +130,7 @@ app.controller('missionAndVisionCtrl', function($scope) {
     });
 });
 
+
 app.controller('media', function($scope) {
     $scope.$on('$viewContentLoaded', function(event) {
         $('#a1').css('display', 'none');
@@ -175,13 +175,6 @@ app.controller('profile', function($scope) {
             $("html, body").animate({ scrollTop: 650 });
 
         });
-    });
-});
-
-app.controller('boardManag', function($scope) {
-    $scope.$on('$viewContentLoaded', function(event) {
-        //Your code goes here.
-    	
     });
 });
 
