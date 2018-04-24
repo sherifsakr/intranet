@@ -20,8 +20,6 @@
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
 
-
-    <head>
         <style>
             .timer {
                 display: flex;
@@ -66,7 +64,7 @@
                 color: white !important;
             }
         </style>
-    </head>
+        <link href="css/cl.css" rel="stylesheet">
 </head>
 
 <body ng-app="internalApp">
@@ -251,7 +249,7 @@
                                 <a href="" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-info">مهام قيد التنفيذ
                           <span class="badge badge-primary badge-pill">6</span>
                           </a>
-                                <a href="#" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-secondary">اجتماعاتي اليوم
+                                <a href="#" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-secondary" data-toggle="modal" data-target="#myModal" target="_self">اجتماعاتي 
                           <span class="badge badge-primary badge-pill">3</span>
                           </a>
                             </div>
@@ -284,8 +282,6 @@
     <!-- load angular and angular route via CDN -->
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.js"></script>
-
-    <script src="js/orgchart.js"></script>
     <script src="js/script.js"></script>
 
     <!--  ticker -->
@@ -314,6 +310,24 @@
         }
         setInterval(clock, 1000);
     </script>
+    <div class="meeting">
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" style="background: transparent !important; border: none !important;">
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div id="calendar"></div>
+			<script src="js/moment.min.js"></script>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <script src="js/cl.js">
+  </script>
+    </div>
 </body>
 
 </html>
