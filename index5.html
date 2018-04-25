@@ -34,7 +34,15 @@
             font-size: 21px;
             color: #747dba;
         }
-        
+        #SearchInternal{
+            position: absolute;
+            top: 9px;
+            left: 16px;
+            border: none;
+            background: none;
+            font-size: 21px;
+            color: #747dba;
+        }
         #google:hover {
             cursor: pointer;
         }
@@ -48,6 +56,17 @@
             font-weight: bold;
             background: whitesmoke;
             margin-bottom: 10px;
+        }
+        
+        .internal_search {
+            border: none;
+            border-bottom: 2px solid;
+            border-radius: 0;
+            border-bottom-color: #1698d5;
+            font-family: inherit;
+            font-weight: bold;
+            background: whitesmoke;
+            
         }
         
         .google-in:focus {
@@ -308,9 +327,13 @@
                     <a class="nav-link" href="#!digital-library"> المكتبة الرقمية</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0 mr-auto">
-                <input class="form-control mr-sm-2" type="search" placeholder="بحث" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">بحث</button>
+            <form role="form" action="" method="get" class="form-inline my-2 my-lg-0 mr-auto">
+                <div>
+                    <button id="SearchInternal">
+                      <i class="fa fa-search"></i>
+                    </button>
+                    <input class="form-control internal_search" autocomplete="off" name="q" placeholder="ابحث بداخل البوابة" required="required" type="text">
+                </div>
             </form>
         </div>
     </nav>
