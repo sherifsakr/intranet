@@ -2,235 +2,51 @@
 <html lang="en" style=" height: 100% !important;">
 
 <head>
-    <script src="https://js.cx/libs/animate.js"></script>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <title>البوابة الداخلية</title>
-    <!--  ticker  -->
-    <link href="vendor/ticker/styles/ticker-style.css" rel="stylesheet" type="text/css" />
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/bootstrap/css/bootstrap-rtl.css" rel="stylesheet">
     <link href="vendor/fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
+
+    <!--  ticker  -->
+    <link href="vendor/ticker/styles/ticker-style.css" rel="stylesheet" type="text/css" />
+
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
-
-    <style>
-        .timer {
-            display: flex;
-        }
-        
-        #google {
-            position: absolute;
-            top: 1px;
-            left: 16px;
-            border: none;
-            background: none;
-            font-size: 21px;
-            color: #747dba;
-        }
-        #SearchInternal{
-            position: absolute;
-            top: 9px;
-            left: 16px;
-            border: none;
-            background: none;
-            font-size: 21px;
-            color: #747dba;
-        }
-        #google:hover {
-            cursor: pointer;
-        }
-        
-        .google-in {
-            border: none;
-            border-bottom: 2px solid;
-            border-radius: 0;
-            border-bottom-color: #1698d5;
-            font-family: inherit;
-            font-weight: bold;
-            background: whitesmoke;
-            margin-bottom: 10px;
-        }
-        
-		.internal_search {
-            border: none;
-            border-bottom: 2px solid;
-            border-radius: 0;
-            border-bottom-color: #1698d5;
-            font-family: inherit;
-            font-weight: bold;
-            background: whitesmoke;
-        }
-        .google-in:focus {
-            box-shadow: 0 0px 5px;
-        }
-        
-        .google-in:hover {
-            box-shadow: 0 0px 5px;
-        }
-        
-        .notifications {
-            padding: 0 !important;
-            margin-top: 9% !important;
-            color: white !important;
-        }
-        
-        .notification {
-            display: inline-block;
-            position: relative;
-            font-size: 1.3em;
-            margin-top: 14px;
-        }
-        
-        .notification::before,
-        .notification::after {
-            color: #fff;
-        }
-        
-        .notification::before {
-            display: block;
-            transform-origin: top center;
-        }
-        
-        .notification::after {
-            font-family: Arial;
-            font-size: 0.7em;
-            font-weight: 700;
-            position: absolute;
-            top: -15px;
-            right: -15px;
-            padding: 5px 8px;
-            line-height: 100%;
-            border: 2px #fff solid;
-            border-radius: 60px;
-            background: #3498db;
-            opacity: 0;
-            content: attr(data-count);
-            opacity: 0;
-            -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-            transition: transform, opacity;
-            transition-duration: 0.3s;
-            transition-timing-function: ease-out;
-        }
-        
-        .notification.show-count::after {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-            opacity: 1;
-        }
-        
-        .sidebar {
-            width: 100%;
-            background-color: whitesmoke;
-            margin-top: 19px;
-            margin-bottom: 19px;
-        }
-        
-        .header_side {
-            border-bottom: 1px solid #37b4a2;
-            padding: 10px;
-            padding-top: 15px;
-            background-color: #90a1bc;
-            color: white;
-        }
-        
-        .links_list a {
-            float: none;
-            display: block;
-            border-bottom: 1px solid #c6cedc;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            transition: 0.3s;
-        }
-        
-        .links_list a:hover {
-            background-color: lightgray;
-            text-decoration: none;
-            box-shadow: 0 0px 5px;
-            color: black !important;
-        }
-        
-        .links_list a:focus {
-            background-color: lightgray;
-            text-decoration: none;
-            box-shadow: 0 0px 5px;
-            color: black !important;
-        }
-        
-        .links_list a:last-child {
-            border-bottom: none;
-        }
-        
-        @media screen and (max-width: 600px) {
-            .sidebar {
-                height: 400px;
-                overflow: scroll;
-            }
-        }
-        
-        .external_news p {
-            font-size: 13px;
-        }
-        
-        .external_news li a {
-            color: #7b7979 !important;
-            font-weight: bold;
-        }
-        
-        
-        .external_news li a.active {
-            color: white !important;
-        }
-        
-        #mySidenav a {
-            position: absolute;
-            left: -83%;
-            transition: 0.3s;
-            padding: 15px;
-            width: 95%;
-            text-decoration: none;
-            font-size: 20px;
-            color: white;
-            border-radius: 0 5px 5px 0;
-            color: white !important;
-        }
-        
-        #mySidenav a:hover {
-            left: 0;
-        }
-        
-        #about {
-            top: 20px;
-            background-color: #36a9e0;
-        }
-        
-        #blog {
-            top: 80px;
-            background-color: #e40808;
-        }
-        
-        #projects {
-            top: 140px;
-            background-color: #90a1bc;
-        }
-        
-        #contact {
-            top: 200px;
-            background-color: #73c366;
-        }
-    </style>
+    <link href="css/home_custom.css" rel="stylesheet">
     <link href="css/cl.css" rel="stylesheet">
+
+    <script src="https://js.cx/libs/animate.js"></script>
+    <style>
+        .sidebar{
+            display: none;
+        }
+        .row-striped:nth-of-type(odd){
+  background-color: #efefef;
+  border-left: 4px #000000 solid;
+}
+
+.row-striped:nth-of-type(even){
+  background-color: #ffffff;
+  border-left: 4px #efefef solid;
+}
+
+.row-striped {
+    padding: 15px 0;
+}
+.row-striped{
+    font-size: 13PX; 
+}
+    </style>
 </head>
 
 <body ng-app="internalApp">
-
     <!--header-->
     <header>
         <div class="container-fluid">
@@ -258,7 +74,7 @@
                             <div class="information">
                                 <h4>ثاني بن غانم بن سالم الحربي</h4>
                                 <h6>آخر تسجيل دخول: 4 مارس 10:40AM</h6>
-                                <div class="notification show-count hidden-md-up" data-count="6"><a href="#" data-toggle="modal" data-target="#myModal1" target="_self"><i class="fa fa-bell" style="color: #3498db;"></i></a></div>
+                                <div class="notification show-count hidden-md-up" data-count="6"><a href="#" data-toggle="modal" data-target="#my_notofications" target="_self"><i class="fa fa-bell" style="color: #3498db;"></i></a></div>
                             </div>
                         </div>
                     </div>
@@ -273,7 +89,6 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-        <a class="navbar-brand" href="#">البوابة الداخلية</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-right">
                 <li class="nav-item active">
@@ -335,11 +150,11 @@
             </form>
         </div>
     </nav>
-    <!-- navigation -->
+    <!-- End navigation -->
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-2 col-md-2 col-sm-12">
+            <aside class="col-md-3 col-12">
                 <div class="sidebar text-center">
                     <div class="header_side">
                         <h5>
@@ -347,7 +162,7 @@
                         </h5>
                     </div>
                     <div class="links_list">
-                        <a href="#">وزارة الداخلية - نظام أبشر</a>
+                        <a href="#">بوابة الخدمات الإلكترونية لوزارة الداخلية - أبشر</a>
                         <a href="#">التأمينات الإجتماعية</a>
                         <a href="#"> مصرف الراجحي - الأفراد</a>
                         <a href="#">حساب المواطن</a>
@@ -465,42 +280,147 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </aside>
 
-            <div class="col-lg-8 col-md-8 col-sm-12">
-                <!-- Page Content -->
-                <div class="container main-container" style="min-height: 670px !important;">
-
-                    <form role="form" action="http://www.google.com/search" method="get" target="_blank">
+            <aside class="col-md-7 col-12">
+                <div style="min-height: 670px !important;">
+                    <form role="form" action="http://www.google.com/search" method="get" target="_blank" style="margin-top: 20px;">
                         <div>
                             <button id="google">
-                              <i class="fa fa-search"></i>
+                                <i class="fa fa-search"></i>
                             </button>
                             <input class="form-control google-in" autocomplete="off" name="q" placeholder="ابحث في Google" required="required" type="text">
                         </div>
                     </form>
-
-
-                    <!-- angular templating -->
-                    <!-- this is where content will be injected -->
                     <div ng-view></div>
-
                     <div class="push" style="background: #000"></div>
                 </div>
-                <!-- /.container -->
+            </aside>
+
+            <aside class="col-md-2 hidden-md-down" style="overflow: hidden">
+                <div class="row" id="mySidenav" class="sidenav">
+                   <div class="col-12">
+                        <a href="#" id="about" class="notification show-count" data-count="6">
+                            <i class="far fa-envelope"></i> بريد غير مقروء
+                        </a>
+
+                        <a href="#" id="blog" class="notification show-count" data-count="3">
+                            <i class="fas fa-tasks"></i> مهام غير منجزة
+                        </a>
+
+                        <a href="#" id="projects" class="notification show-count" data-count="8">
+                            <i class="fas fa-spinner"></i> مهام قيد التنفيذ
+                        </a>
+
+                        <a href="#" id="contact" class="notification show-count" data-count="2" target="_self">
+                            <i class="fas fa-users"></i> اجتماعات اليوم
+                        </a>
+                   </div>
+                </div>
+                <div class="row events-list" style="margin-top: 100%;">
+                    <div class="col-12">
+                        <div class="row row-striped">
+                            <div class="col-12">
+                                <h3 class="text-uppercase"><strong>اجتماع البوابة الداخلية</strong></h3>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar-o" aria-hidden="true"></i> عبدالله الفريجي</li>
+                                    <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 12:30 PM - 2:00 PM</li>
+                                    <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> غرفة الإجتماعات</li>
+                                </ul>
+                
+                            </div>
+                        </div>
+                        <div class="row row-striped">
+                            <div class="col-12">
+                                <h3 class="text-uppercase"><strong>اجتماع إدارات التقنية</strong></h3>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar-o" aria-hidden="true"></i> عبدالخالق الشهري</li>
+                                    <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
+                                    <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> الدور الأرضي</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row row-striped">
+                            <div class="col-12">
+                                <h3 class="text-uppercase"><strong>اجتماع إدارات التقنية</strong></h3>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar-o" aria-hidden="true"></i> عبدالخالق الشهري</li>
+                                    <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
+                                    <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> الدور الأرضي</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row row-striped">
+                            <div class="col-12">
+                                <h3 class="text-uppercase"><strong>اجتماع إدارات التقنية</strong></h3>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar-o" aria-hidden="true"></i> عبدالخالق الشهري</li>
+                                    <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
+                                    <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> الدور الأرضي</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="meeting">
+            <!-- The Modal of Calendar of the apointments -->
+            <div class="modal fade" id="apointments_calendar">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content" style="background: transparent !important; border: none !important;">
+                        <div class="modal-body">
+                            <div id="calendar"></div>
+                            <script src="js/moment.min.js"></script>
+                            <script>
+                            </script>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">إغلاق</button>
+                    </div>
+                </div>
+                <script src="js/cl.js"></script>
             </div>
-
-            <div class="col-lg-2 col-md-2 col-sm-12 hidden-md-down" style="overflow: hidden">
-                <div id="mySidenav" class="sidenav">
-                    <a href="#" id="about" class="notification show-count" data-count="6"><i class="far fa-envelope"></i> بريد غير مقروء </a>
-                    <a href="#" id="blog" class="notification show-count" data-count="3"><i class="fas fa-tasks"></i>
-                        مهام غير منجزة</a>
-                    <a href="#" id="projects" class="notification show-count" data-count="8"><i class="fas fa-spinner"></i>
-
-                        مهام قيد التنفيذ</a>
-                    <a href="#" id="contact" class="notification show-count" data-count="2" data-toggle="modal" data-target="#myModal" target="_self"><i class="fas fa-users"></i>
-
-                        اجتماعاتي هذاالشهر</a>
+            <!--End-->
+            <!--The Modal of the Notifications-->
+            <div class="modal fade" id="my_notofications">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content" style="background: transparent !important; border: none !important;">
+                        <div class="modal-body">
+                            <div class="col-12 notifications-mobile">
+                                <div class="card text-dark bg-light" id="notifications" style="border: none;">
+                                    <div class="card-header text-center" style="background-color: #38b2c3; height: 55px; padding-top: 17px;">
+                                        <h4>تنبيهاتي</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="list-group">
+                                            <a href="" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-primary">
+                                                    بريد غير مقروء
+                                                    <span class="badge badge-primary badge-pill">13</span>
+                                                </a>
+                                            <a href="" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-danger">
+                                                    مهام غير منجزة
+                                                    <span class="badge badge-primary badge-pill">4</span>
+                                                </a>
+                                            <a href="" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-success">
+                                                    مهام منجزة
+                                                    <span class="badge badge-primary badge-pill">57</span>    
+                                                </a>
+                                            <a href="" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-info">
+                                                    مهام قيد التنفيذ
+                                                    <span class="badge badge-primary badge-pill">6</span>
+                                                </a>
+                                            <a href="#" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-secondary" data-toggle="modal" data-dismiss="modal" data-target="#apointments_calendar" target="_self">
+                                                    اجتماعاتي 
+                                                    <span class="badge badge-primary badge-pill">3</span>
+                                                </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -555,71 +475,7 @@
         }
         setInterval(clock, 1000);
     </script>
-    <div class="meeting">
 
-        <!-- The Modal -->
-        <div class="modal fade" id="myModal">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content" style="background: transparent !important; border: none !important;">
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <div id="calendar"></div>
-                        <script src="js/moment.min.js"></script>
-                        <script>
-                        </script>
-                    </div>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">إغلاق</button>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="myModal1">
-            <div class="modal-dialog modal-md">
-                <div class="modal-content" style="background: transparent !important; border: none !important;">
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="col-12 notifications">
-                                    <div class="card text-dark bg-light" id="notifications" style="border: none;">
-                                        <div class="card-header text-center" style="background-color: #38b2c3; height: 55px; padding-top: 17px;">
-                                            <h4>تنبيهاتي</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <!--Starting list group here -->
-                                            <div class="list-group">
-                                                <a href="" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-primary">بريد غير مقروء
-                              <span class="badge badge-primary badge-pill">13</span>
-                              </a>
-                                                <a href="" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-danger">مهام غير منجزة
-                              <span class="badge badge-primary badge-pill">4</span>
-                              </a>
-                                                <a href="" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-success">
-                                مهام منجزة
-                                <span class="badge badge-primary badge-pill">57</span>    
-                              </a>
-                                                <a href="" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-info">مهام قيد التنفيذ
-                              <span class="badge badge-primary badge-pill">6</span>
-                              </a>
-                                                <a href="#" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-secondary" data-toggle="modal" data-dismiss="modal" data-target="#myModal" target="_self">اجتماعاتي 
-                              <span class="badge badge-primary badge-pill">3</span>
-                              </a>
-                                            </div>
-                                            <!--Ends here -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <script src="js/cl.js">
-        </script>
-    </div>
 </body>
+
 </html>

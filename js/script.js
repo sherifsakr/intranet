@@ -71,9 +71,10 @@ app.controller("mainCtrl", function($scope) {
     $scope.$on('$viewContentLoaded', function(event) {
         //Your code goes here.
         $('#js-news').ticker();
-
-
-
+        $("#contact").hover(function(){
+            $(this).attr("data-count","0");
+            $(".events-list").slideDown();
+        });
     });
 
     $(document).ready(function() {
