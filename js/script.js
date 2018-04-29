@@ -116,6 +116,9 @@ app.controller("mainCtrl", function($scope) {
             }
             clickEvent = false;
         });
+        $(".footer_noti").click(function(){
+            $(".events-list").css("display","none");
+        });
     });
 
     $(window).load(function() {
@@ -212,9 +215,6 @@ app.controller('regulationsPolicies', function($scope) {
         $("table a").css({
             'font-weight': 'bold',
             'background-color': '#4eba93'
-        });
-        $(".footer_noti").click(function(){
-            $(".events-list").css("display","none");
         });
     });
 });
