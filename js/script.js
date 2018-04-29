@@ -116,8 +116,6 @@ app.controller("mainCtrl", function($scope) {
             }
             clickEvent = false;
         });
-
-
     });
 
     $(window).load(function() {
@@ -126,7 +124,6 @@ app.controller("mainCtrl", function($scope) {
         var triggerheight = Math.round(boxheight / itemlength + 1);
         $('#demo .list-group-item').outerHeight(triggerheight);
     });
-
 });
 
 
@@ -134,14 +131,13 @@ app.controller("mainCtrl", function($scope) {
 app.controller('missionAndVisionCtrl', function($scope) {
     $scope.$on('$viewContentLoaded', function(event) {
         //Your code goes here.
-        $('.card').css('display', 'none');
+        // $('.card').css('display', 'none');
         $('.notifications div').css('display', 'block');
 
         $('#v').slideDown(500, function() {
             $('#m').slideDown(500, function() {
                 $('#vl').slideDown(500, function() {
                     $(".card-text").fadeIn('slow');
-
                 });
             });
         });
@@ -217,7 +213,9 @@ app.controller('regulationsPolicies', function($scope) {
             'font-weight': 'bold',
             'background-color': '#4eba93'
         });
-
+        $(".footer_noti").click(function(){
+            $(".events-list").css("display","none");
+        });
     });
 });
 

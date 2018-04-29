@@ -175,6 +175,7 @@
 
 #mySidenav a:hover {
     left: 0;
+    cursor: pointer !important;
 }
 
 #about {
