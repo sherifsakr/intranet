@@ -58,7 +58,7 @@ app.config(function($routeProvider) {
         .when("/digital-library", {
             templateUrl: "pages/digitalLib.html",
             controller: "digital-library"
-            	
+
         })
 
 
@@ -71,9 +71,27 @@ app.controller("mainCtrl", function($scope) {
     $scope.$on('$viewContentLoaded', function(event) {
         //Your code goes here.
         $('#js-news').ticker();
-        $("#contact").hover(function(){
-            $(this).attr("data-count","0");
-            $(".events-list").slideDown();
+        $("#about").click(function() {
+            $('.events-list').css("display", "none");
+            $("#mails").slideDown();
+
+        });
+
+
+        $("#blog").click(function() {
+            $('.events-list').css("display", "none");
+            $("#late_tasks").slideDown();
+
+        });
+
+        $("#projects").click(function() {
+            $('.events-list').css("display", "none");
+            $("#loading_tasks").slideDown();
+        });
+
+        $("#contact").click(function() {
+            $('.events-list').css("display", "none");
+            $("#meetings").slideDown();
         });
     });
 

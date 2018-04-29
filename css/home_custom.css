@@ -136,13 +136,6 @@
     color: black !important;
 }
 
-.links_list a:focus {
-    background-color: lightgray;
-    text-decoration: none;
-    box-shadow: 0 0px 5px;
-    color: black !important;
-}
-
 .links_list a:last-child {
     border-bottom: none;
 }
@@ -203,6 +196,7 @@
     top: 200px;
     background-color: #73c366;
 }
-.events-list{
+
+.events-list {
     display: none;
 }

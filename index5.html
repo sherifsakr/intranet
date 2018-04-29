@@ -24,25 +24,30 @@
 
     <script src="https://js.cx/libs/animate.js"></script>
     <style>
-        .sidebar{
+        .sidebar {
             display: none;
         }
-        .row-striped:nth-of-type(odd){
-  background-color: #efefef;
-  border-left: 4px #000000 solid;
-}
-
-.row-striped:nth-of-type(even){
-  background-color: #ffffff;
-  border-left: 4px #efefef solid;
-}
-
-.row-striped {
-    padding: 15px 0;
-}
-.row-striped{
-    font-size: 13PX; 
-}
+        
+        .row-striped:nth-of-type(odd) {
+            background-color: #efefef;
+        }
+        
+        .row-striped:nth-of-type(even) {
+            background-color: #ffffff;
+            border-left: 4px #efefef solid;
+        }
+        
+        .row-striped {
+            padding: 15px 0;
+        }
+        
+        .row-striped {
+            font-size: 13PX;
+        }
+        
+        .events-list .row-striped:hover {
+            box-shadow: 0 0px 10px;
+        }
     </style>
 </head>
 
@@ -69,7 +74,7 @@
                         <div class="col-md-4 weather hidden-sm-down">
                             <img class="img-responsive" src="images/weather.png" alt="" />
                         </div>
-                        <div class="col-md-5 profile">
+                        <div class="col-md-4 profile">
                             <!-- <i style="float:right;" class="fas fa-user-circle fa-4x"></i> -->
                             <div class="information">
                                 <h4>ثاني بن غانم بن سالم الحربي</h4>
@@ -297,67 +302,183 @@
                 </div>
             </aside>
 
-            <aside class="col-md-2 hidden-md-down" style="overflow: hidden">
-                <div class="row" id="mySidenav" class="sidenav">
-                   <div class="col-12">
-                        <a href="#" id="about" class="notification show-count" data-count="6">
+            <aside class="col-md-2 hidden-md-down" style="overflow: hidden;">
+                <div class="row sidenav" id="mySidenav">
+                    <div class="col-12">
+                        <a href="#" id="about" class="notification show-count" data-count="4">
                             <i class="far fa-envelope"></i> بريد غير مقروء
                         </a>
 
-                        <a href="#" id="blog" class="notification show-count" data-count="3">
+                        <a href="#" id="blog" class="notification show-count" data-count="2">
                             <i class="fas fa-tasks"></i> مهام غير منجزة
                         </a>
 
-                        <a href="#" id="projects" class="notification show-count" data-count="8">
+                        <a href="#" id="projects" class="notification show-count" data-count="2">
                             <i class="fas fa-spinner"></i> مهام قيد التنفيذ
                         </a>
 
-                        <a href="#" id="contact" class="notification show-count" data-count="2" target="_self">
+                        <a href="#" id="contact" class="notification show-count" data-count="5" target="_self">
                             <i class="fas fa-users"></i> اجتماعات اليوم
                         </a>
-                   </div>
+                    </div>
                 </div>
-                <div class="row events-list" style="margin-top: 100%;">
+                <div class="row events-list" id="meetings" style="margin-top: 100%; border: #3a68b2 5px solid">
                     <div class="col-12">
-                        <div class="row row-striped">
-                            <div class="col-12">
-                                <h3 class="text-uppercase"><strong>اجتماع البوابة الداخلية</strong></h3>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar-o" aria-hidden="true"></i> عبدالله الفريجي</li>
-                                    <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 12:30 PM - 2:00 PM</li>
-                                    <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> غرفة الإجتماعات</li>
-                                </ul>
-                
+                        <div class="card" style="border: none;" id="v">
+                            <div class="card-header" style="color: #3a68b2; border-bottom: #3a68b2 5px solid">
+                                <h4>
+                                    اجتماعات اليوم
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row row-striped">
+                                    <div class="col-12">
+                                        <h3 class="text-uppercase"><strong>اجتماع البوابة الداخلية</strong></h3>
+                                        <ul class="list-inline">
+                                            <li><i class="fa fa-calendar-o" aria-hidden="true"></i> عبدالله بن فهد الفريجي</li>
+                                            <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 12:30 PM - 2:00 PM</li>
+                                            <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> غرفة الإجتماعات</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="row row-striped">
+                                    <div class="col-12">
+                                        <h3 class="text-uppercase"><strong>اجتماع إدارات التقنية</strong></h3>
+                                        <ul class="list-inline">
+                                            <li><i class="fa fa-calendar-o" aria-hidden="true"></i> خالد بن محمد الدلقان</li>
+                                            <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
+                                            <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> الدور الأرضي</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row row-striped">
+                                    <div class="col-12">
+                                        <h3 class="text-uppercase"><strong>اجتماع فريق عمل البوابة الداخلية</strong></h3>
+                                        <ul class="list-inline">
+                                            <li><i class="fa fa-calendar-o" aria-hidden="true"></i> عبدالخالق الشهري</li>
+                                            <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
+                                            <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> غرفة الإجتماعات</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row row-striped">
+                                    <div class="col-12">
+                                        <h3 class="text-uppercase"><strong>الإجتماع الدوري لإدارات التقنية</strong></h3>
+                                        <ul class="list-inline">
+                                            <li><i class="fa fa-calendar-o" aria-hidden="true"></i> خالد بن محمد الدلقان</li>
+                                            <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
+                                            <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> غرفة الإجتمات</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row row-striped">
-                            <div class="col-12">
-                                <h3 class="text-uppercase"><strong>اجتماع إدارات التقنية</strong></h3>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar-o" aria-hidden="true"></i> عبدالخالق الشهري</li>
-                                    <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
-                                    <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> الدور الأرضي</li>
-                                </ul>
+                    </div>
+                </div>
+                <div class="row events-list" id="mails" style="margin-top: 100%; border: #3a68b2 5px solid">
+                    <div class="col-12">
+                        <div class="card" style="border: none;">
+                            <div class="card-header" style="color: #3a68b2; border-bottom: #3a68b2 5px solid">
+                                <h4>
+                                    بريد غير مقروء
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row row-striped">
+                                    <div class="col-12">
+                                        <h3 class="text-uppercase"><strong>Abdullah F.Alfrayji</strong></h3>
+                                        <ul class="list-inline">
+                                            <li><i class="fa fa-calendar-o" aria-hidden="true"></i>تجهيز بيئة العمل - مشروع تطوير البوابة الداخلية</li>
+                                            <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 12:30 PM 24-04-2018</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row row-striped">
+                                    <div class="col-12">
+                                        <h3 class="text-uppercase"><strong>Abdullah F.Alfrayji</strong></h3>
+                                        <ul class="list-inline">
+                                            <li><i class="fa fa-calendar-o" aria-hidden="true"></i>تجهيز بيئة العمل - مشروع تطوير البوابة الداخلية</li>
+                                            <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 12:30 PM 24-04-2018</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row row-striped">
+                                    <div class="col-12">
+                                        <h3 class="text-uppercase"><strong>Abdullah F.Alfrayji</strong></h3>
+                                        <ul class="list-inline">
+                                            <li><i class="fa fa-calendar-o" aria-hidden="true"></i>تجهيز بيئة العمل - مشروع تطوير البوابة الداخلية</li>
+                                            <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 12:30 PM 24-04-2018</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row row-striped">
+                                    <div class="col-12">
+                                        <h3 class="text-uppercase"><strong>Abdullah F.Alfrayji</strong></h3>
+                                        <ul class="list-inline">
+                                            <li><i class="fa fa-calendar-o" aria-hidden="true"></i>تجهيز بيئة العمل - مشروع تطوير البوابة الداخلية</li>
+                                            <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 12:30 PM 24-04-2018</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row row-striped">
-                            <div class="col-12">
-                                <h3 class="text-uppercase"><strong>اجتماع إدارات التقنية</strong></h3>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar-o" aria-hidden="true"></i> عبدالخالق الشهري</li>
-                                    <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
-                                    <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> الدور الأرضي</li>
-                                </ul>
+                    </div>
+                </div>
+                <div class="row events-list" id="late_tasks" style="margin-top: 100%; border: #3a68b2 5px solid">
+                    <div class="col-12">
+                        <div class="card" style="border: none;">
+                            <div class="card-header" style="color: #3a68b2; border-bottom: #3a68b2 5px solid">
+                                <h4>
+                                    مهام غير منجزة
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row row-striped">
+                                    <div class="col-12">
+                                        <h3 class="text-uppercase"><strong>تصميم صفحة عرض المكتبة الرقمية</strong></h3>
+                                        <ul class="list-inline">
+                                            <li style="color: red;"><i class="fa fa-calendar-o" aria-hidden="true"></i>منذ 4 أيام</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row row-striped">
+                                    <div class="col-12">
+                                        <h3 class="text-uppercase"><strong>إنشاء Role لخدمة الدعم الفني</strong></h3>
+                                        <ul class="list-inline">
+                                            <li style="color: red;"><i class="fa fa-calendar-o" aria-hidden="true"></i>منذ 3 أيام</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row row-striped">
-                            <div class="col-12">
-                                <h3 class="text-uppercase"><strong>اجتماع إدارات التقنية</strong></h3>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar-o" aria-hidden="true"></i> عبدالخالق الشهري</li>
-                                    <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
-                                    <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> الدور الأرضي</li>
-                                </ul>
+                    </div>
+                </div>
+                <div class="row events-list" id="loading_tasks" style="margin-top: 100%; border: #3a68b2 5px solid">
+                    <div class="col-12">
+                        <div class="card" style="border: none;">
+                            <div class="card-header" style="color: #3a68b2; border-bottom: #3a68b2 5px solid">
+                                <h4>
+                                    مهام ٌقيد التنفيذ
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row row-striped">
+                                    <div class="col-12">
+                                        <h3 class="text-uppercase"><strong>تصميم الصفحة الصفحة الرئيسية</strong></h3>
+                                        <ul class="list-inline">
+                                            <li><i class="fa fa-calendar-o" aria-hidden="true"></i>وقت الإنتهاء: 21/05/2018</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row row-striped">
+                                    <div class="col-12">
+                                        <h3 class="text-uppercase"><strong>إنشاء Role لخدمة الدعم الفني</strong></h3>
+                                        <ul class="list-inline">
+                                            <li><i class="fa fa-calendar-o" aria-hidden="true"></i>وقت الإنتهاء: 21/05/2018</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
